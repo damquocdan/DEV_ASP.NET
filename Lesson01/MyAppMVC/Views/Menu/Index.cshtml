@@ -1,0 +1,100 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "menu";
+}
+<div>
+    <h1 style="text-align: center;">Đăng Ký Thành Viên</h1>
+    <table border="1" cellspacing="0" cellpadding="10" width="500" align="center">
+        <tbody>
+            <tr>
+                <td><label for="hovaten">Họ Và tên</label></td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="tendangnhap">Tên đăng nhập</label></td>
+                <td><input type="text" name="admin" id="admin"></td>
+            </tr>
+            <tr>
+                <td><label for="pass">Password</label></td>
+                <td><input type="password" name="pass" id="pass"></td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label for="image">Ảnh đại diện</label>
+                </td>
+                <td><input type="file" name="file" id="file"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date">Ngày sinh</label>
+                </td>
+                <td><input type="date" name="date" id="date"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Thư điện tử</label>
+                </td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+
+            <tr>
+                <td><label for="gioitinh">Giới tính</label></td>
+                <td>
+                    <input type="radio" name="gioitinh" id="gioitinhnam"><label for="gioitinhnam">Nam</label>
+                    <input type="radio" name="gioitinh" id="gioitinhnu"><label for="gioitinhnu">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="sothic">saihieu</label></td>
+                <td>
+                    <select name="HN" id="HN">
+                        <option value="bn">--Chọn tỉnh thành--</option>
+                        <option value="bg">Bắc Giang</option>
+                        <option value="hcm">Hồ Chí Minh</option>
+                        <option value="tg">Tiền Gian</option>
+                        <option value="ct">Cần Thơ</option>
+                        <option value="bc">Bắc Cạn</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="diachi">Địa chỉ</label></td>
+                <td><input type="text" name="diachi" id="diachi"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="tel">Số điện thoại</label>
+                </td>
+                <td><input type="tel" name="tel" id="tel" placeholder="(+84)"></td>
+            </tr>
+            <tr>
+                <td>
+                    Mô tả ngắn
+                </td>
+                <td>
+                    <textarea name="text" id="textarea" cols="30" rows="10"></textarea>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td><label for="sothic">Sở thích</label></td>
+                <td>
+                    <input type="checkbox" name="sothic" id="db"><label for="db">bóng đá</label>
+                    <input type="checkbox" name="sothic" id="br"> <label for="br">Bóng rổ</label>
+                </td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" name="dangky" id="dangky">
+                    <input type="reset" name="reset" id="reset">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
