@@ -1,5 +1,6 @@
 ﻿using Lesson02.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Immutable;
 
 namespace Lesson02.Controllers
 {
@@ -44,7 +45,7 @@ namespace Lesson02.Controllers
                 },
                 new Product {
                     Id = 4,
-                    Name = "Đồ gia",
+                    Name = "Đồ gia dụng",
                     Image=Url.Content("~/Image/4.jpg"),
                     Price=100,
                     SalePrice=100,
@@ -55,7 +56,7 @@ namespace Lesson02.Controllers
                 },
                 new Product {
                     Id = 5,
-                    Name = "An toàn gia đình",
+                    Name = "Thực phẩm an toàn gia đình",
                     Image=Url.Content("~/Image/5.jpg"),
                     Price=100,
                     SalePrice=100,
@@ -86,26 +87,26 @@ namespace Lesson02.Controllers
             List<Category> categories = new List<Category>
             {
                 new Category { Id = 1,
-                    Name = "Test",
+                    Name = "Quần áo nam",
                 },
                 new Category { Id = 2,
-                    Name = "Test",
+                    Name = "Quần áo nữ",
                 },
                 new Category { Id = 3,
-                    Name = "Test",
+                    Name = "Quần áo cho trẻ nhỏ",
                 },
                 new Category { Id = 4,
-                    Name = "Test",
+                    Name = "Đồ gia dụng",
                 },
                 new Category { Id = 5,
-                    Name = "Test",
+                    Name = "Thực phẩm an toàn gia đình",
                 },
                 new Category { Id = 6,
-                    Name = "Test",
+                    Name = "Dụng cụ vườn nhà",
                 }
 
             };
-            Account product = categories.FirstOrDefault(c => c.Id == id);
+            Account product = categories.ToImmutableArray(c => c.Id == id);
             ViewBag.roduct = product;
             return View();
         }
