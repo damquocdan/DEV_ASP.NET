@@ -4,90 +4,13 @@ using System.Collections.Immutable;
 
 namespace Lesson02.Controllers
 {
+
     public class ProductController : Controller
     {
-        
-        public IActionResult Index()
-        {
-            List<Product> products = new List<Product> {
-                new Product {
-                    Id = 1,
-                    Name = "Quần áo nam",
-                    Image=Url.Content("~/Image/1.jpg"),
-                    Price=1000000,
-                    SalePrice=699999,
-                    CategoryID="m1",
-                    Description="Test",
-                    Status="test",
-                    CreateAt="dddd"
-                },
-                new Product {
-                    Id = 2,
-                    Name = "Quần áo nữ",
-                    Image=Url.Content("~/Image/2.jpg"),
-                    Price=3000000,
-                    SalePrice=2490000,
-                    CategoryID="m1",
-                    Description="Test",
-                    Status="test",
-                    CreateAt="dddd"
-                },
-                new Product {
-                    Id = 3,
-                    Name = "Quần áo cho trẻ nhỏ",
-                    Image=Url.Content("~/Image/3.jpg"),
-                    Price=100900,
-                    SalePrice=19900,
-                    CategoryID="m1",
-                    Description="Test",
-                    Status="test",
-                    CreateAt="dddd"
-                },
-                new Product {
-                    Id = 4,
-                    Name = "Đồ gia dụng",
-                    Image=Url.Content("~/Image/4.jpg"),
-                    Price=100,
-                    SalePrice=100,
-                    CategoryID="m1",
-                    Description="Test",
-                    Status="test",
-                    CreateAt="dddd"
-                },
-                new Product {
-                    Id = 5,
-                    Name = "Thực phẩm an toàn gia đình",
-                    Image=Url.Content("~/Image/5.jpg"),
-                    Price=100,
-                    SalePrice=100,
-                    CategoryID="m1",
-                    Description="Test",
-                    Status="test",
-                    CreateAt="dddd"
-                },
-                new Product {
-                    Id = 6,
-                    Name = "Dụng cụ vườn nhà",
-                    Image=Url.Content("~/Image/6.jpg"),
-                    Price=100,
-                    SalePrice=100,
-                    CategoryID="m1",
-                    Description="Test",
-                    Status="test",
-                    CreateAt="dddd"
-                }
-            };
-            ViewBag.Products = products;
-            return View();
-            
-
-        }
-        [Route("sanpham", Name = "category")]
-        public IActionResult Category(int id) {
-            List<Category> categories = new List<Category>
+     private List<Category> lstCategory = new List<Category>()
             {
                 new Category { Id = 1,
-                    Name = "Quần áo nam",
+                    Name = "Quần áo",
                 },
                 new Category { Id = 2,
                     Name = "Quần áo nữ",
@@ -106,11 +29,87 @@ namespace Lesson02.Controllers
                 }
 
             };
-            Account product = categories.ToImmutableArray(c => c.Id == id);
-            ViewBag.roduct = product;
+      private List<Product> lstProduct = new List<Product> {
+                new Product {
+                    Id = 1,
+                    Name = "Quần áo nam",
+                    Image="/Avatar/1.jpg",
+                    Price=1000000,
+                    SalePrice=699999,
+                    CategoryID=1,
+                    Description="Bộ đồ quần áo cho nam giới",
+                    Status=true,
+                    
+                },
+                new Product {
+                    Id = 2,
+                    Name = "Quần áo nữ",
+                    Image="/Avatar/2.jpg",
+                    Price=3000000,
+                    SalePrice=2490000,
+                    CategoryID=1,
+                    Description="Test",
+                    Status=true,
+                    
+                },
+                new Product {
+                    Id = 3,
+                    Name = "Quần áo cho trẻ nhỏ",
+                    Image="/Avatar/3.jpg",
+                    Price=100900,
+                    SalePrice=19900,
+                    CategoryID=1,
+                    Description="Test",
+                    Status=true,
+                    
+                },
+                new Product {
+                    Id = 4,
+                    Name = "Đồ gia dụng",
+                    Image="/Avatar/4.jpg",
+                    Price=100,
+                    SalePrice=100,
+                    CategoryID=4,
+                    Description="Test",
+                    Status=true,
+
+                },
+                new Product {
+                    Id = 5,
+                    Name = "Thực phẩm an toàn gia đình",
+                    Image="/Avatar/5.jpg",
+                    Price=100,
+                    SalePrice=100,
+                    CategoryID=5,
+                    Description="Test",
+                    Status=true,
+                
+                },
+                new Product {
+                    Id = 6,
+                    Name = "Dụng cụ vườn nhà",
+                    Image="/Avatar/6.jpg",
+                    Price=100,
+                    SalePrice=100,
+                    CategoryID=6,
+                    Description="Test",
+                    Status=true,
+
+                }
+            };
+        public IActionResult Index(int ?id)
+        {
+           
+            ViewBag.Categories = lstCategory;
+            if (id != null)
+            {
+                lstProduct = lstProduct.Where(x=>x.CategoryID == id.Value).ToList();   
+            }
+            ViewBag.Products = lstProduct;
             return View();
+            
+
         }
-   
        
     }
 }

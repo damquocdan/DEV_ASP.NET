@@ -2,45 +2,50 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
-    ViewData["Title"] = "Index";
-    var products = ViewBag.products;
+    ViewData["Title"] = "List Product";
+    var products = ViewBag.Products as List<Lesson02.Models.Product>;
+    var categories = ViewBag.Categories as List<Lesson02.Models.Category>;
 }
-<div class="row">
-    <div class="col-md-3">
-        <h1>DANH MUC</h1>
-        <div>
-            <div >
-                <p class ="border-bottom-0">Quần áo</p>
-                <p class="border-bottom-0">Túi sách</p>
-                <p class="border-bottom-0">Đồng hồ</p>
-                <p class="border-bottom-0">Ti vi</p>
-                <p class="border-bottom-0">Tủ lạnh</p>
-                <p class="border-bottom-0">Máy bơm</p>
-                <p class="border-bottom-0">Quạt điện</p>
-                <p class="border">Lò sưởi</p>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="list-group">
+                <li class="list-group-item active" aria-current="true">DANH MỤC</li>
+                @{
+                    foreach (var item in categories)
+                    {
+                        <li class="list-group-item">
+                            <a href="/san-pham/@item.Id">@item.Name</a>
+                        </li>
+                    }
+                }
+            </ul>
         </div>
-    </div>
-    <div class="col-md-9">
-        <h1>Danh sách sản phầm</h1>
-        <div class="row">
-        @foreach (var item in products)
-        {
-                <div class="col-md-4">
-                    <img src="@item.Image" alt="">
-                    <div class="caption">
-                        <h3>@item.Name</h3>
-                        <p>
-                            <s>@item.Price</s>
-                            @item.SalePrice
-                        </p>
-                        <p>
-                            <a asp-route-id="@item.Id" asp-action="category" class="btn btn-success btn-block">Chi tiet</a>
-                        </p>
-                    </div>
-                </div>
+        <div class="col-md-9">
+            <h1>Danh sách sản phầm</h1>
+            <div class="d-flex flex-wrap">
+                @{
+                    foreach (var item in products)
+                    {
+                        <div class="col-md-4">
+                            <img src="@item.Image" alt="">
+                            <div class="caption">
+                                <h3>@item.Name</h3>
+                                <p>
+                                    <s>@item.Price</s>
+                                    @item.SalePrice
+                                </p>
+                                <p>
+                                    <a href="#" class="btn btn-primary">Chi tiet</a>
+                                </p>
+                            </div>
+                        </div>
+                    }
 
-            }
+                }
+
+            </div>
+            
         </div>
     </div>
 </div>

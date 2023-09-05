@@ -33,8 +33,9 @@ namespace Lesson02
                 name: "default",
                 pattern: "{controller=Account}/{action=Index}/{id?}");
             app.MapControllerRoute(
-                name: "default",
-                pattern: "{controller=Product}/{action=Index}/{id?}");
+                name: "san-pham",
+                pattern: "san-pham/{id?}",
+                defaults: new { controller="Product",action="Index"});
 
             app.Run();
         }
