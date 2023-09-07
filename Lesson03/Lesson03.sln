@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34018.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson03", "Lesson03.csproj", "{47CDB614-D60E-4D0F-98F3-9804D460B3FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson03", "Lesson03.csproj", "{47CDB614-D60E-4D0F-98F3-9804D460B3FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartialView", "..\PartialView\PartialView.csproj", "{A8B182BB-6CC6-4DB5-89E5-94FA0033DC29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{47CDB614-D60E-4D0F-98F3-9804D460B3FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47CDB614-D60E-4D0F-98F3-9804D460B3FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47CDB614-D60E-4D0F-98F3-9804D460B3FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8B182BB-6CC6-4DB5-89E5-94FA0033DC29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8B182BB-6CC6-4DB5-89E5-94FA0033DC29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8B182BB-6CC6-4DB5-89E5-94FA0033DC29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8B182BB-6CC6-4DB5-89E5-94FA0033DC29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
