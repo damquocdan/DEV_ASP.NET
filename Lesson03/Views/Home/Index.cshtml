@@ -6,3 +6,21 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+<!-- Nut bam-->
+<button id="loadAjax" class="btn btn-sm btn-primary">
+    Click load book tu partialResult
+</button>
+<hr />
+<!-- Noi dung dc load tu patial view vao day-->
+<div id="data-from-ajax" class="row">Loading data....</div>
+
+<hr />
+@section Scripts{
+    <script>
+        // goi su kien click vao nut bam co id loadAjax
+        $('#loadAjax').click(function () {
+            // thong qua ajax load noi dung tu partial view vao id ="data-from-ajax"
+            $('#data-from-ajax').load("/Book/PopularBook");
+        })
+    </script>
+}

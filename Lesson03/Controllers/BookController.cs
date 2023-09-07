@@ -28,5 +28,10 @@ namespace Lesson03.Controllers
             Book model = book.GetBookById(id);
             return View(model);
         }
+        public PartialViewResult PopularBook()
+        {
+            var books = book.GetBookList();
+            return PartialView(books);
+        }
     }
 }
