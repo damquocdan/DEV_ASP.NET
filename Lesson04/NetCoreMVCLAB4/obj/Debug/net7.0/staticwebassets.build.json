@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TulDSiKrIT2DrS6yLy8J2di3QhWobLZI877mGuG7TzE=",
+  "Hash": "7AEzgxKDu2FDhOB/WFmJE2KTB6kxtmPwT8Wrn82UA38=",
   "Source": "NetCoreMVCLAB4",
   "BasePath": "_content/NetCoreMVCLAB4",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "E:\\DEV_ASP.NET\\Lesson04\\NetCoreMVCLAB4\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\NetCoreMVCLAB4.bundle.scp.css"
+    },
+    {
+      "Identity": "E:\\DEV_ASP.NET\\Lesson04\\NetCoreMVCLAB4\\wwwroot\\Avatar\\dabongdh11c12.jpg",
+      "SourceId": "NetCoreMVCLAB4",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\DEV_ASP.NET\\Lesson04\\NetCoreMVCLAB4\\wwwroot\\",
+      "BasePath": "_content/NetCoreMVCLAB4",
+      "RelativePath": "Avatar/dabongdh11c12.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Avatar\\dabongdh11c12.jpg"
     },
     {
       "Identity": "E:\\DEV_ASP.NET\\Lesson04\\NetCoreMVCLAB4\\wwwroot\\css\\site.css",

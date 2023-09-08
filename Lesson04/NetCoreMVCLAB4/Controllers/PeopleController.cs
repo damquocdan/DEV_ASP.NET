@@ -75,8 +75,7 @@ namespace NetCoreMVCLAB4.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, People model)
         {
-            if (ModelState.IsValid)
-            {
+            
                 // upload file vào thư mục wwwroot/product
                 var files = HttpContext.Request.Form.Files;
                 // using System.linq;
@@ -86,26 +85,25 @@ namespace NetCoreMVCLAB4.Controllers
                     var FileName = file.FileName;
                     // nhớ tạo thư mục avatar trong thư mục wwwroot/images
                     // using System.Io;
-                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\avatar", FileName);
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\Avatar", FileName);
                     using (var stream = new FileStream(path, FileMode.Create))
                     {
                         file.CopyTo(stream);
-                        model.Avatar = FileName;// gán tên ảnh cho thuộc tính Avatar
+                        model.Avatar ="Avatar/" +FileName;// gán tên ảnh cho thuộc tính Avatar
                     }
                 }
+                Data.peoples.Add(model);
                 return RedirectToAction(nameof(Index));
 
-            }
-            else
-            {
-                return View(model);
-            }
+            
+            
 
         }
 
         // GET: PeopleController/Delete/5
         public ActionResult Delete(int id)
         {
+            var people = Data.GetPeopleById(id);
             return View();
         }
 
@@ -120,6 +118,7 @@ namespace NetCoreMVCLAB4.Controllers
             }
             catch
             {
+                var people = Data.GetPeopleById(id);
                 return View();
             }
         }
