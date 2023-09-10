@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\NetCoreMVCLAB4.bundle.scp.css"
     },
     {
+      "Id": "E:\\DEV_ASP.NET\\Lesson04\\NetCoreMVCLAB4\\wwwroot\\Avatar\\2R3A7886.jpg",
+      "PackagePath": "staticwebassets\\Avatar\\2R3A7886.jpg"
+    },
+    {
       "Id": "E:\\DEV_ASP.NET\\Lesson04\\NetCoreMVCLAB4\\wwwroot\\Avatar\\2R3A8186.jpg",
       "PackagePath": "staticwebassets\\Avatar\\2R3A8186.jpg"
     },

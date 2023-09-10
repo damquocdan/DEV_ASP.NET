@@ -35,8 +35,10 @@ namespace NetCoreMVCLAB4.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(People model)
         {
-            //if (ModelState.IsValid)
-            //{
+            try
+            {
+                //if (ModelState.IsValid)
+                //{
                 // upload file vào thư mục wwwroot/product
                 var files = HttpContext.Request.Form.Files;
                 // using System.linq;
@@ -53,9 +55,14 @@ namespace NetCoreMVCLAB4.Controllers
                         model.Avatar = "images/avatar/" + FileName;// gán tên ảnh cho thuộc tính Avatar
                     }
                 }
-             Data.peoples.Add(model);
+                Data.peoples.Add(model);
                 return RedirectToAction(nameof(Index));
-
+            }
+            catch(Exception ex)
+            {
+                ViewBag.Error = ex.Message;
+                return View(model);
+            }
             //}
             //else
             //{
@@ -75,7 +82,9 @@ namespace NetCoreMVCLAB4.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, People model)
         {
-            
+            try
+            {
+
                 // upload file vào thư mục wwwroot/product
                 var files = HttpContext.Request.Form.Files;
                 // using System.linq;
@@ -89,12 +98,23 @@ namespace NetCoreMVCLAB4.Controllers
                     using (var stream = new FileStream(path, FileMode.Create))
                     {
                         file.CopyTo(stream);
-                        model.Avatar ="Avatar/" +FileName;// gán tên ảnh cho thuộc tính Avatar
+                        model.Avatar = "Avatar/" + FileName;// gán tên ảnh cho thuộc tính Avatar
                     }
                 }
-                Data.peoples.Add(model);
-                return RedirectToAction(nameof(Index));
+                for (int i = 0; i < Data.peoples.Count; i++)
+                {
+                    if (Data.peoples[i].Id == id)
+                    {
+                        Data.peoples[i] = model;
+                    }
+                }
 
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View(model);
+            }
             
             
 

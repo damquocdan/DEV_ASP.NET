@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "p2b+e28vMp2nVByR6C4cRwY2kLhG/Z6qwYVX8Ujd9u8=",
+  "Hash": "3jc1DjWEGJ0yd3KJX5vatfY3juzgGguEwUgcvt1PLdw=",
   "Source": "NetCoreMVCLAB4",
   "BasePath": "_content/NetCoreMVCLAB4",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "E:\\DEV_ASP.NET\\Lesson04\\NetCoreMVCLAB4\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\NetCoreMVCLAB4.bundle.scp.css"
+    },
+    {
+      "Identity": "E:\\DEV_ASP.NET\\Lesson04\\NetCoreMVCLAB4\\wwwroot\\Avatar\\2R3A7886.jpg",
+      "SourceId": "NetCoreMVCLAB4",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\DEV_ASP.NET\\Lesson04\\NetCoreMVCLAB4\\wwwroot\\",
+      "BasePath": "_content/NetCoreMVCLAB4",
+      "RelativePath": "Avatar/2R3A7886.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Avatar\\2R3A7886.jpg"
     },
     {
       "Identity": "E:\\DEV_ASP.NET\\Lesson04\\NetCoreMVCLAB4\\wwwroot\\Avatar\\2R3A8186.jpg",
