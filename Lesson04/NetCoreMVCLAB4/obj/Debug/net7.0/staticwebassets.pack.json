@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\NetCoreMVCLAB4.bundle.scp.css"
     },
     {
+      "Id": "E:\\DEV_ASP.NET\\Lesson04\\NetCoreMVCLAB4\\wwwroot\\Avatar\\2R3A8186.jpg",
+      "PackagePath": "staticwebassets\\Avatar\\2R3A8186.jpg"
+    },
+    {
       "Id": "E:\\DEV_ASP.NET\\Lesson04\\NetCoreMVCLAB4\\wwwroot\\Avatar\\dabongdh11c12.jpg",
       "PackagePath": "staticwebassets\\Avatar\\dabongdh11c12.jpg"
     },
@@ -43,6 +47,10 @@
     {
       "Id": "E:\\DEV_ASP.NET\\Lesson04\\NetCoreMVCLAB4\\wwwroot\\images\\avatar\\6.jpg",
       "PackagePath": "staticwebassets\\images\\avatar\\6.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\Lesson04\\NetCoreMVCLAB4\\wwwroot\\images\\avatar\\dan.jpg",
+      "PackagePath": "staticwebassets\\images\\avatar\\dan.jpg"
     },
     {
       "Id": "E:\\DEV_ASP.NET\\Lesson04\\NetCoreMVCLAB4\\wwwroot\\js\\site.js",

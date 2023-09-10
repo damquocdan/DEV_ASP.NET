@@ -76,9 +76,10 @@
         {
             return peoples;
         }
-        public static People GetPeopleById(int id)
+        public static People? GetPeopleById(int id)
         {
-            return GetPeoples().FirstOrDefault(p => p.Id == id);
+            var people = peoples.FirstOrDefault(p => p.Id == id);
+            return people;
         }
     }
 }

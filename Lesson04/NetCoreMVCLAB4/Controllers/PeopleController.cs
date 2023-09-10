@@ -103,22 +103,30 @@ namespace NetCoreMVCLAB4.Controllers
         // GET: PeopleController/Delete/5
         public ActionResult Delete(int id)
         {
-            var people = Data.GetPeopleById(id);
-            return View();
+            var peoples = Data.GetPeopleById(id);
+            return View(peoples);
         }
 
         // POST: PeopleController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(int id, People model)
         {
             try
             {
+                for (int i = 0; i < Data.peoples.Count; i++)
+                {
+                    if (Data.peoples[i].Id==id)
+                    {
+                        Data.peoples.RemoveAt(i);
+                        break;
+                    }
+                }
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
-                var people = Data.GetPeopleById(id);
+              
                 return View();
             }
         }
