@@ -4,7 +4,6 @@ namespace Lap05.Models
 {
     public class Category
     {
-        [Key]
         public int Id { get; set; }
         [Display(Name = "Tên")]
         [Required(ErrorMessage ="Tên không được để trống")]

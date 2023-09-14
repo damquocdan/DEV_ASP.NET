@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Newtonsoft.Json.Serialization;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Lap05.Models
 {
@@ -16,7 +18,7 @@ namespace Lap05.Models
         [Required(ErrorMessage ="Vui lòng không để trống ô nhập ảnh")]
         public string Image { get; set; }
 
-        [Display(Name ="Giá gốc")]
+        [Display(Name ="Price")]
         [Required(ErrorMessage ="Vui lòng không để trống giá gốc")]
         [Range(100000,99999999,ErrorMessage ="giá phải lớn hơn 100000")]
         [DataType(DataType.Text)]
@@ -24,15 +26,19 @@ namespace Lap05.Models
 
         [Display(Name="Giảm giá")]
         [Required(ErrorMessage ="vui lòng không để trống giá sale")]//compare validation ASP.Net MVc
+        [Compare("Price",ErrorMessage ="Giá bán phải nhỏ hơn giá gốc")]
         public float SalePrice { get; set; }
 
-
-        [Display(Name="Danh mục Id")]
+        [Display(Name="Danh mục")]
+        [Required(ErrorMessage ="Vui lòng chọn 1 danh mục")]
         public int CategoryId { get; set; }
+
+        
+
 
         [Display(Name="Mô tả")]
         [MaxLength(1500,ErrorMessage ="Không vượt quá 1500 ký tự")]
-        //#regularExpression 
+        
         public string Description { get; set; }
     }
 }
