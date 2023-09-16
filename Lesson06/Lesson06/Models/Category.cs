@@ -8,11 +8,16 @@ namespace Lesson06.Models
     public class Category
     {
         [Key]
-        public int CategoryId { get; set; }
+        public int Id { get; set; }
         [Required(ErrorMessage ="Tên danh mục không được để trống")]
+        [StringLength(100)]
         [Column(TypeName ="nvarchar(100)")]
-        public string CategoryName { get; set; }
+        public string Name { get; set; }
+        [Column(TypeName ="tinyint")]
+        public byte Status { get; set; }
+        // Danh sách sản phẩm theo danh muc 
 
-        public ICollection<Book> books { get; set;}
+
+        public ICollection<Product> products { get; set;}
     }
 }
