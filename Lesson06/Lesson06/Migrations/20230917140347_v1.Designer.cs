@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Lesson06.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230916015410_v1")]
+    [Migration("20230917140347_v1")]
     partial class v1
     {
         /// <inheritdoc />
@@ -32,6 +32,9 @@ namespace Lesson06.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -90,7 +93,7 @@ namespace Lesson06.Migrations
             modelBuilder.Entity("Lesson06.Models.Product", b =>
                 {
                     b.HasOne("Lesson06.Models.Category", "Category")
-                        .WithMany("products")
+                        .WithMany("Products")
                         .HasForeignKey("CategoryID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -100,7 +103,7 @@ namespace Lesson06.Migrations
 
             modelBuilder.Entity("Lesson06.Models.Category", b =>
                 {
-                    b.Navigation("products");
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

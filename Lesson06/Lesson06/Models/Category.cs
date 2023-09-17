@@ -17,7 +17,7 @@ namespace Lesson06.Models
         public byte Status { get; set; }
         // Danh sách sản phẩm theo danh muc 
 
-
-        public ICollection<Product> products { get; set;}
+        public DateTime CreatedDate { get; set; }
+        public ICollection<Product> Products { get; set;}
     }
 }

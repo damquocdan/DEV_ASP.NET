@@ -56,7 +56,7 @@ namespace Lesson06.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Status")] Category category)
+        public async Task<IActionResult> Create([Bind("Id,Name,Status,CreatedDate")] Category category)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +88,7 @@ namespace Lesson06.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Status")] Category category)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Status,CreatedDate")] Category category)
         {
             if (id != category.Id)
             {
