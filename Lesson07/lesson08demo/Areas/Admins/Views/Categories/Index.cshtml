@@ -1,0 +1,83 @@
+﻿@model X.PagedList.IPagedList<Lesson08.Lab.Models.Category>
+@using X.PagedList.Mvc.Core;
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admins/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div>
+    <form action="" method="get" class="form-inline">
+        <div class="form-group">
+            <label class="sr-only" for="keyword">Tìm theo tên loại</label>
+            <input class="form-control" name="name" id="keyword" placeholder="Nhập tên
+cần tìm">
+        </div>
+
+        <button type="submit" class="btn btn-default mr-1">
+            <i class="fas fa-search"></i>
+        </button>
+
+        <a asp-action="Create" class="btn btn-primary">
+            <i class="fas fa-plus"></i>
+            Thêm mới
+        </a>
+    </form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                    @Html.DisplayNameFor(model =>model.FirstOrDefault().Name)
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.FirstOrDefault().Status)
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.FirstOrDefault().CreatedDate)
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.FirstOrDefault().Image)
+                
+                
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.FirstOrDefault().Description)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedDate)
+            </td>
+            <td>
+                <img src="@item.Image" alt="@item.Name" width="50px" height="35px" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>
+
+<hr />
+@Html.PagedListPager(Model,page=>Url.Action("Index",new{page=page}),new X.PagedList.Web.Common.PagedListRenderOptions{
+    LiElementClasses= new string[] {"page-item"},
+    PageClasses=new string[] {"page-link"}
+})
