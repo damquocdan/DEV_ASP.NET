@@ -297,6 +297,10 @@
       "PackagePath": "staticwebassets\\images\\categories\\1.jpg"
     },
     {
+      "Id": "E:\\DEV_ASP.NET\\Lesson07\\lesson08demo\\wwwroot\\images\\categories\\12A6 bong.jpg",
+      "PackagePath": "staticwebassets\\images\\categories\\12A6 bong.jpg"
+    },
+    {
       "Id": "E:\\DEV_ASP.NET\\Lesson07\\lesson08demo\\wwwroot\\images\\categories\\2023-02-07 (1).png",
       "PackagePath": "staticwebassets\\images\\categories\\2023-02-07 (1).png"
     },
@@ -323,6 +327,18 @@
     {
       "Id": "E:\\DEV_ASP.NET\\Lesson07\\lesson08demo\\wwwroot\\images\\categories\\2023-06-20.png",
       "PackagePath": "staticwebassets\\images\\categories\\2023-06-20.png"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\Lesson07\\lesson08demo\\wwwroot\\images\\categories\\26.9.2023.jpg",
+      "PackagePath": "staticwebassets\\images\\categories\\26.9.2023.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\Lesson07\\lesson08demo\\wwwroot\\images\\categories\\2R3A8185.jpg",
+      "PackagePath": "staticwebassets\\images\\categories\\2R3A8185.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\Lesson07\\lesson08demo\\wwwroot\\images\\products\\2R3A7886.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\2R3A7886.jpg"
     },
     {
       "Id": "E:\\DEV_ASP.NET\\Lesson07\\lesson08demo\\wwwroot\\js\\site.js",

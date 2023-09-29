@@ -82,6 +82,7 @@ namespace lesson08demo.Areas.Admins.Controllers
                         // gán tên thuộc tínhcho thẻ image
                     }
                 }
+                category.CreatedDate = DateTime.Now;
                 _context.Add(category);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -127,7 +128,7 @@ namespace lesson08demo.Areas.Admins.Controllers
                         var file = files[0];
                         var FileName = file.FileName;
                         // upload ảnh vào thư mục wwwroot\\images\\category
-                        var path = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot\\iamges\\Category", FileName);
+                        var path = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot\\images\\categories", FileName);
                         using (var stream = new FileStream(path, FileMode.Create))
                         {
                             file.CopyTo(stream);
