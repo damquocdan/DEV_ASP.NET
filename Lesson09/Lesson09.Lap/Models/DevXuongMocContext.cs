@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Lesson09.Lap.Models;
 
 namespace Lesson09.Lap.Models;
 
@@ -751,4 +752,6 @@ public partial class DevXuongMocContext : DbContext
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+    public DbSet<Lesson09.Lap.Models.Cart> Cart { get; set; }
 }
