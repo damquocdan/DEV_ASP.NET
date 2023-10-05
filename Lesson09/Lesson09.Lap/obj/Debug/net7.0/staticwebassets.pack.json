@@ -293,6 +293,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "E:\\DEV_ASP.NET\\Lesson09\\Lesson09.Lap\\wwwroot\\images\\banner\\12A6 bong.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\12A6 bong.jpg"
+    },
+    {
       "Id": "E:\\DEV_ASP.NET\\Lesson09\\Lesson09.Lap\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

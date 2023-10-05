@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AdGluUY3HdSYiLVdkI7wY0ESpK1Ap7Zxz4HJy5nVXuU=",
+  "Hash": "KtqPh/wCaOLx/89H98uzS5EXiZrSxPlZMdCyCY7r10g=",
   "Source": "Lesson09.Lap",
   "BasePath": "_content/Lesson09.Lap",
   "Mode": "Default",
@@ -1273,6 +1273,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "E:\\DEV_ASP.NET\\Lesson09\\Lesson09.Lap\\wwwroot\\images\\banner\\12A6 bong.jpg",
+      "SourceId": "Lesson09.Lap",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\DEV_ASP.NET\\Lesson09\\Lesson09.Lap\\wwwroot\\",
+      "BasePath": "_content/Lesson09.Lap",
+      "RelativePath": "images/banner/12A6 bong.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\banner\\12A6 bong.jpg"
     },
     {
       "Identity": "E:\\DEV_ASP.NET\\Lesson09\\Lesson09.Lap\\wwwroot\\js\\site.js",

@@ -1,0 +1,172 @@
+﻿@model X.PagedList.IPagedList<Lesson09.Lap.Models.AdminLog>
+@using X.PagedList.Mvc.Core;
+
+@{
+    ViewData["Title"] = "AdminLog";
+    Layout = "~/Areas/Admins/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>AdminLog</h1>
+<div class="row">
+    <form action="" method="get" class="form-inline">
+        <div class="form-group">
+            <label class="sr-only" for="keyword">Tìm kiếm</label>
+            <input class="form-control" name="name" id="keyword" placeholder="Nhập tên cần tìm" />
+        </div>
+        <button type="submit" class="btn btn-dèault mr-1"><i class="fas fa-search"></i></button>
+        <a asp-action="Create" class="btn btn-primary"><i class="fas fa-plus"></i>Thêm mới</a>
+    </form>
+</div>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().SessionId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().AppCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().ThreadId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().StartTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().EndTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().AdminUserId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().UserLogin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().IpAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().ActionCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().ActionName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().MenuCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().MenuName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().WebpagesActionId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().ActionType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().ObjectId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Content)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().LogLevel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().ErrorCode)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SessionId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ThreadId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AdminUserId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserLogin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IpAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ActionCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ActionName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MenuCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MenuName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WebpagesActionId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ActionType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ObjectId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Content)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LogLevel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ErrorCode)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.LogId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.LogId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.LogId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<hr/>
+@Html.PagedListPager(Model,page=>Url.Action(("Index"),new {page=page}),new X.PagedList.Web.Common.PagedListRenderOptions{
+    LiElementClasses = new string[] { "page-item" },
+    PageClasses = new string[] { "page-link" }
+})
