@@ -24,7 +24,6 @@
                                         <button class="btn qty_btn">
                                             <i class="fa fa-minus"></i>
                                         </button>
-
                                         <input type="number" class="qty_input" value="@item.Quantity" />
 
                                         <button class="btn qty_btn">
@@ -41,11 +40,11 @@
                             </div>
 
                             <div class="btn-action">
-                                <a href="/cart/remove/?id=@item.Id" class="btn remove">
+                                <a href="/carts/remove/?id=@item.Id" class="btn remove">
                                     <i class="fa-solid fa-xmark"></i>
                                 </a>
 
-                                <a href="/cart/?id=@item.Id" data-id="@item.Id" data- qty="@item.Quantity"
+                                <a href="/carts/?id=@item.Id" data-id="@item.Id" data- qty="@item.Quantity"
                                    class="btn update">Cập nhật</a>
 
                             </div>
@@ -74,7 +73,7 @@
 
                         <div class="group-btn">
 
-                            <a href="/cart/orders" class="btn">Đặt hàng ngay</a>
+                            <a href="/carts/orders" class="btn">Đặt hàng ngay</a>
                             <a href="/product" class="btn">Tiếp tục mua hàng</a>
                         </div>
                     </div>
