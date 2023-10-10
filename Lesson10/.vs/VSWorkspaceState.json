@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Lesson10.Authorize",
+    "\\Lesson10.Authorize\\Areas",
+    "\\Lesson10.Authorize\\Areas\\Identity",
+    "\\Lesson10.Authorize\\Areas\\Identity\\Pages",
+    "\\Lesson10.Authorize\\Controllers",
+    "\\Lesson10.Authorize\\Data",
+    "\\Lesson10.Authorize\\Models",
+    "\\Lesson10.Authorize\\Views",
+    "\\Lesson10.Authorize\\Views\\Home"
+  ],
+  "SelectedNode": "\\Lesson10.Authorize\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+  "PreviewInSolutionExplorer": false
+}
