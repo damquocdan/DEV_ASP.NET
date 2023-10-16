@@ -18,4 +18,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\NewFolder1\" />
+    <Folder Include="Areas\NewFolder\" />
+  </ItemGroup>
+
 </Project>

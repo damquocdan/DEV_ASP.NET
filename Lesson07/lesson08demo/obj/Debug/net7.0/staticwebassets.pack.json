@@ -341,6 +341,14 @@
       "PackagePath": "staticwebassets\\images\\products\\2R3A7886.jpg"
     },
     {
+      "Id": "E:\\DEV_ASP.NET\\Lesson07\\lesson08demo\\wwwroot\\images\\products\\2R3A8186.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\2R3A8186.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\Lesson07\\lesson08demo\\wwwroot\\images\\products\\Image",
+      "PackagePath": "staticwebassets\\images\\products"
+    },
+    {
       "Id": "E:\\DEV_ASP.NET\\Lesson07\\lesson08demo\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

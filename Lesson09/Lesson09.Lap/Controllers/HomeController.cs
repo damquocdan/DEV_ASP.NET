@@ -17,6 +17,10 @@ namespace Lesson09.Lap.Controllers
         {
             return View();
         }
+        public IActionResult Login()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {

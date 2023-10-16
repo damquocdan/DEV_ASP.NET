@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JNMMtd3mXVdqObBePQ2ChchXxm+/OPk4m31pTnCR4ls=",
+  "Hash": "JTRc1RciI60X4rXFcQ34/d+NwbvEJtVaGB4eY0IfIAA=",
   "Source": "lesson08demo",
   "BasePath": "_content/lesson08demo",
   "Mode": "Default",
@@ -1477,6 +1477,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\products\\2R3A7886.jpg"
+    },
+    {
+      "Identity": "E:\\DEV_ASP.NET\\Lesson07\\lesson08demo\\wwwroot\\images\\products\\2R3A8186.jpg",
+      "SourceId": "lesson08demo",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\DEV_ASP.NET\\Lesson07\\lesson08demo\\wwwroot\\",
+      "BasePath": "_content/lesson08demo",
+      "RelativePath": "images/products/2R3A8186.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\2R3A8186.jpg"
+    },
+    {
+      "Identity": "E:\\DEV_ASP.NET\\Lesson07\\lesson08demo\\wwwroot\\images\\products\\Image",
+      "SourceId": "lesson08demo",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\DEV_ASP.NET\\Lesson07\\lesson08demo\\wwwroot\\",
+      "BasePath": "_content/lesson08demo",
+      "RelativePath": "images/products/Image",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\Image"
     },
     {
       "Identity": "E:\\DEV_ASP.NET\\Lesson07\\lesson08demo\\wwwroot\\js\\site.js",
