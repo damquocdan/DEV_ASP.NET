@@ -1,8 +1,10 @@
-﻿@model IEnumerable<DevXuongMoc.Models.AdminUser>
-
+﻿@model X.PagedList.IPagedList<DevXuongMoc.Models.AdminUser>
+@using X.PagedList.Mvc.Core;
 @{
-    Layout = null;
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
 }
+
 
 <!DOCTYPE html>
 
@@ -12,62 +14,69 @@
     <title>Index</title>
 </head>
 <body>
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+    <div class="row">
+        <form action="" method="get" class="form-inline">
+            <div class="form-group">
+                <label class="sr-only" for="keyword">Tìm theo tài khoản</label>
+                <input class="form-control" name="name" id="keyword" placeholder="Nhập tên cần tìm" />
+            </div>
+            <button type="submit" class="btn btn-default mr-1"><i class="fas fa-search"></i></button>
+            <a asp-action="Create" class="btn btn-primary"><i class="fas fa-plus"></i>Thêm mới</a>
+        </form>
+    
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Account)
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Account)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Password)
+                        @Html.DisplayNameFor(model => model.FirstOrDefault().Password)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.MaNhanSu)
+                        @Html.DisplayNameFor(model => model.FirstOrDefault().MaNhanSu)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                        @Html.DisplayNameFor(model => model.FirstOrDefault().Name)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Phone)
+                        @Html.DisplayNameFor(model => model.FirstOrDefault().Phone)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Email)
+                        @Html.DisplayNameFor(model => model.FirstOrDefault().Email)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Avatar)
+                        @Html.DisplayNameFor(model => model.FirstOrDefault().Avatar)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdPhongBan)
+                        @Html.DisplayNameFor(model => model.FirstOrDefault().IdPhongBan)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.NgayTao)
+                        @Html.DisplayNameFor(model => model.FirstOrDefault().NgayTao)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.NguoiTao)
+                        @Html.DisplayNameFor(model => model.FirstOrDefault().NguoiTao)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.NgayCapNhat)
+                        @Html.DisplayNameFor(model => model.FirstOrDefault().NgayCapNhat)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.NguoiCapNhat)
+                        @Html.DisplayNameFor(model => model.FirstOrDefault().NguoiCapNhat)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.SessionToken)
+                        @Html.DisplayNameFor(model => model.FirstOrDefault().SessionToken)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Salt)
+                        @Html.DisplayNameFor(model => model.FirstOrDefault().Salt)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IsAdmin)
+                        @Html.DisplayNameFor(model => model.FirstOrDefault().IsAdmin)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.TrangThai)
+                        @Html.DisplayNameFor(model => model.FirstOrDefault().TrangThai)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IsDelete)
+                        @Html.DisplayNameFor(model => model.FirstOrDefault().IsDelete)
             </th>
             <th></th>
         </tr>
@@ -134,6 +143,14 @@
         </tr>
 }
     </tbody>
-</table>
+        </table>
+        <hr />
+        @Html.PagedListPager(Model,page=>Url.Action("Index",new{page=page}),new 
+        X.PagedList.Web.Common.PagedListRenderOptions{
+
+            LiElementClasses = new string[] {"page-item"},
+            PageClasses = new string[] {"page-link"}
+        })
+    </div>
 </body>
 </html>

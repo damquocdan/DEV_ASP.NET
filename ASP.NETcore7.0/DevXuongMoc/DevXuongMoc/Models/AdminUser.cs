@@ -5,10 +5,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DevXuongMoc.Models;
 
-//[Table("ADMIN_USER")]
+[Table("ADMIN_USER")]
 public partial class AdminUser
 {
-    //[Key]
+    [Key]
     public int Id { get; set; }
 
     [Required(ErrorMessage ="Không được để trống")]

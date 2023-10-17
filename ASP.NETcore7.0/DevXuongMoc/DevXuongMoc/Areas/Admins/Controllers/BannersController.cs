@@ -20,11 +20,16 @@ namespace DevXuongMoc.Areas.Admins.Controllers
         }
 
         // GET: Admins/Banners
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string name)
         {
-              return _context.Banners != null ? 
-                          View(await _context.Banners.ToListAsync()) :
-                          Problem("Entity set 'DevXuongMocSqlContext.Banners'  is null.");
+            var banner = await _context.Banners.ToListAsync();
+            //nếu có tham số name trên url
+            if (!String.IsNullOrEmpty(name))
+            {
+                banner = await _context.Banners.Where(c => c.Title.Contains(name)).ToListAsync();
+            }
+            ViewBag.keyword = name;
+            return View(banner);
         }
 
         // GET: Admins/Banners/Details/5
@@ -60,6 +65,22 @@ namespace DevXuongMoc.Areas.Admins.Controllers
         {
             if (ModelState.IsValid)
             {
+                var files = HttpContext.Request.Form.Files;
+                if (files.Count()>0&& files[0].Length>0)
+                {
+                    var file = files[0];
+                    var FileName = file.FileName;
+                    //upload ảnh vào thư mục wwwroot\\images\\Category
+                    var path = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot\\images\\banners", FileName);
+                    using(var stream = new FileStream(path, FileMode.Create))
+                    {
+                        file.CopyTo(stream);
+                        banner.Image = "/images/banners/" + FileName;
+                        //gán tên ảnh cho thuộc tính Image
+                    }
+                }
+                banner.CreatedDate = DateTime.Now;
+
                 _context.Add(banner);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -99,6 +120,22 @@ namespace DevXuongMoc.Areas.Admins.Controllers
             {
                 try
                 {
+                    var files = HttpContext.Request.Form.Files;
+                    if (files.Count() > 0 && files[0].Length > 0)
+                    {
+                        var file = files[0];
+                        var FileName = file.FileName;
+                        //upload ảnh vào thư mục wwwroot\\images\\Category
+                        var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\banners", FileName);
+                        using (var stream = new FileStream(path, FileMode.Create))
+                        {
+                            file.CopyTo(stream);
+                            banner.Image = "/images/banners/" + FileName;
+                            //gán tên ảnh cho thuộc tính Image
+                        }
+                    }
+                    banner.UpdatedDate = DateTime.Now;
+
                     _context.Update(banner);
                     await _context.SaveChangesAsync();
                 }

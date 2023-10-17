@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DevXuongMoc.Models;
+using System.Reflection.Metadata;
+using X.PagedList;
 
 namespace DevXuongMoc.Areas.Admins.Controllers
 {
@@ -20,14 +22,17 @@ namespace DevXuongMoc.Areas.Admins.Controllers
         }
 
         // GET: Admins/AdminUsers
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string name,int page=1)
         {
-            var data = await _context.AdminUsers.ToListAsync();
-
-              //return _context.AdminUsers != null ? 
-              //            View(await _context.AdminUsers.ToListAsync()) :
-              //            Problem("Entity set 'DevXuongMocSqlContext.AdminUsers'  is null.");
-              return View(data);
+            // số bản ghi trêm một trang
+            int limit = 5;
+            var adminUser = await _context.AdminUsers.DefaultIfEmpty().OrderBy(au=>au.Id).ToPagedListAsync(page,limit);
+            // nếucos tham số name trên url
+            if (!String.IsNullOrEmpty(name)){
+                adminUser = await _context.AdminUsers.DefaultIfEmpty().Where(au=>au.Account.Contains(name)).OrderBy(au=>au.Id).ToPagedListAsync(page,limit);
+            }
+            ViewBag.keyword = name;
+            return View(adminUser);
         }
 
         // GET: Admins/AdminUsers/Details/5
