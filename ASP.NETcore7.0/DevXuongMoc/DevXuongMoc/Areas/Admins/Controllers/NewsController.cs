@@ -11,60 +11,60 @@ using X.PagedList;
 namespace DevXuongMoc.Areas.Admins.Controllers
 {
     [Area("Admins")]
-    public class PartnersController : Controller
+    public class NewsController : Controller
     {
         private readonly DevXuongMocSqlContext _context;
 
-        public PartnersController(DevXuongMocSqlContext context)
+        public NewsController(DevXuongMocSqlContext context)
         {
             _context = context;
         }
 
-        // GET: Admins/Partners
+        // GET: Admins/News
         public async Task<IActionResult> Index(string name, int page = 1)
         {
             // Số bản ghi trên một trang
             int limit = 5;
-            var partner = await _context.Partners.OrderBy(c => c.Id).ToPagedListAsync(page, limit);
+            var news = await _context.News.OrderBy(c => c.Id).ToPagedListAsync(page, limit);
             // nếu có tham số name trên url
             if (!String.IsNullOrEmpty(name))
             {
-                partner = await _context.Partners.Where(c => c.Title.Contains(name)).OrderBy(c => c.Id).ToPagedListAsync(page, limit);
+                news = await _context.News.Where(c => c.Title.Contains(name)).OrderBy(c => c.Id).ToPagedListAsync(page, limit);
             }
             ViewBag.keyword = name;
-            return View(partner);
+            return View(news);
         }
 
-        // GET: Admins/Partners/Details/5
+        // GET: Admins/News/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Partners == null)
+            if (id == null || _context.News == null)
             {
                 return NotFound();
             }
 
-            var partner = await _context.Partners
+            var news = await _context.News
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (partner == null)
+            if (news == null)
             {
                 return NotFound();
             }
 
-            return View(partner);
+            return View(news);
         }
 
-        // GET: Admins/Partners/Create
+        // GET: Admins/News/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Admins/Partners/Create
+        // POST: Admins/News/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,Logo,Url,Orders,CreatedDate,UpdatedDate,AdminCreated,AdminUpdated,Content,Status,Isdelete")] Partner partner)
+        public async Task<IActionResult> Create([Bind("Id,Code,Title,Description,Content,Image,MetaTitle,MainKeyword,MetaKeyword,MetaDescription,Slug,Views,Likes,Star,CreatedDate,UpdatedDate,AdminCreated,AdminUpdated,Status,Isdelete")] News news)
         {
             if (ModelState.IsValid)
             {
@@ -74,47 +74,47 @@ namespace DevXuongMoc.Areas.Admins.Controllers
                     var file = files[0];
                     var FileName = file.FileName;
                     //upload ảnh vào thư mục wwwroot\\images\\category
-                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\partners", FileName);
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\news", FileName);
                     using (var stream = new FileStream(path, FileMode.Create))
                     {
                         file.CopyTo(stream);
-                        partner.Logo = "/images/partners" + FileName;
+                        news.Image = "/images/news" + FileName;
                         // Gán tên cho thuộc tính Icon
 
                     }
                 }
-                partner.CreatedDate = DateTime.Now;
-                _context.Add(partner);
+                news.CreatedDate = DateTime.Now;
+                _context.Add(news);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(partner);
+            return View(news);
         }
 
-        // GET: Admins/Partners/Edit/5
+        // GET: Admins/News/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Partners == null)
+            if (id == null || _context.News == null)
             {
                 return NotFound();
             }
 
-            var partner = await _context.Partners.FindAsync(id);
-            if (partner == null)
+            var news = await _context.News.FindAsync(id);
+            if (news == null)
             {
                 return NotFound();
             }
-            return View(partner);
+            return View(news);
         }
 
-        // POST: Admins/Partners/Edit/5
+        // POST: Admins/News/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Logo,Url,Orders,CreatedDate,UpdatedDate,AdminCreated,AdminUpdated,Content,Status,Isdelete")] Partner partner)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Code,Title,Description,Content,Image,MetaTitle,MainKeyword,MetaKeyword,MetaDescription,Slug,Views,Likes,Star,CreatedDate,UpdatedDate,AdminCreated,AdminUpdated,Status,Isdelete")] News news)
         {
-            if (id != partner.Id)
+            if (id != news.Id)
             {
                 return NotFound();
             }
@@ -129,22 +129,22 @@ namespace DevXuongMoc.Areas.Admins.Controllers
                         var file = files[0];
                         var FileName = file.FileName;
                         //upload ảnh vào thư mục wwwroot\\images\\category
-                        var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\partners", FileName);
+                        var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\news", FileName);
                         using (var stream = new FileStream(path, FileMode.Create))
                         {
                             file.CopyTo(stream);
-                            partner.Logo = "/images/partners" + FileName;
+                            news.Image = "/images/news" + FileName;
                             // Gán tên cho thuộc tính Icon
 
                         }
                     }
-                    partner.UpdatedDate = DateTime.Now;
-                    _context.Update(partner);
+                    news.UpdatedDate = DateTime.Now;
+                    _context.Update(news);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!PartnerExists(partner.Id))
+                    if (!NewsExists(news.Id))
                     {
                         return NotFound();
                     }
@@ -155,49 +155,49 @@ namespace DevXuongMoc.Areas.Admins.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(partner);
+            return View(news);
         }
 
-        // GET: Admins/Partners/Delete/5
+        // GET: Admins/News/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Partners == null)
+            if (id == null || _context.News == null)
             {
                 return NotFound();
             }
 
-            var partner = await _context.Partners
+            var news = await _context.News
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (partner == null)
+            if (news == null)
             {
                 return NotFound();
             }
 
-            return View(partner);
+            return View(news);
         }
 
-        // POST: Admins/Partners/Delete/5
+        // POST: Admins/News/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Partners == null)
+            if (_context.News == null)
             {
-                return Problem("Entity set 'DevXuongMocSqlContext.Partners'  is null.");
+                return Problem("Entity set 'DevXuongMocSqlContext.News'  is null.");
             }
-            var partner = await _context.Partners.FindAsync(id);
-            if (partner != null)
+            var news = await _context.News.FindAsync(id);
+            if (news != null)
             {
-                _context.Partners.Remove(partner);
+                _context.News.Remove(news);
             }
             
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool PartnerExists(int id)
+        private bool NewsExists(int id)
         {
-          return (_context.Partners?.Any(e => e.Id == id)).GetValueOrDefault();
+          return _context.News.Any(e => e.Id == id);
         }
     }
 }

@@ -1,7 +1,8 @@
 ﻿@model DevXuongMoc.Models.AdminUser
 
 @{
-    Layout = null;
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
 }
 
 <!DOCTYPE html>
@@ -105,14 +106,14 @@
                 <span asp-validation-for="IsDelete" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input class="btn btn-info" type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a class="btn btn-warning" asp-action="Index">Back to List</a>
 </div>
 
 </body>

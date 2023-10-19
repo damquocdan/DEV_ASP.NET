@@ -1,6 +1,5 @@
-﻿@model X.PagedList.IPagedList<DevXuongMoc.Models.Partner>
+﻿@model X.PagedList.IPagedList<DevXuongMoc.Models.News>
 @using X.PagedList.Mvc.Core;
-
 
 @{
     ViewData["Title"] = "Index";
@@ -13,29 +12,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Lesson07.Assignment.styles.css" asp-append-version="true" />
-    <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="~/plugins/fontawesome-free/css/all.min.css">
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- Tempusdominus Bootstrap 4 -->
-    <link rel="stylesheet" href="~/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-    <!-- iCheck -->
-    <link rel="stylesheet" href="~/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-    <!-- JQVMap -->
-    <link rel="stylesheet" href="~/plugins/jqvmap/jqvmap.min.css">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="~/dist/css/adminlte.min.css">
-    <!-- overlayScrollbars -->
-    <link rel="stylesheet" href="~/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-    <!-- Daterange picker -->
-    <link rel="stylesheet" href="~/plugins/daterangepicker/daterangepicker.css">
-    <!-- summernote -->
-    <link rel="stylesheet" href="~/plugins/summernote/summernote-bs4.min.css">
+
 </head>
 <body>
     <div class="row">
@@ -51,35 +28,59 @@
 <table class="table">
     <thead>
         <tr>
-            <th>
-                        @Html.DisplayNameFor(model => model.FirstOrDefault().Title)
-            </th>
-            <th>
-                        @Html.DisplayNameFor(model => model.FirstOrDefault().Logo)
-            </th>
             @* <th>
-                @Html.DisplayNameFor(model => model.Url)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Orders)
+                @Html.DisplayNameFor(model => model.Code)
             </th> *@
             <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().CreatedDate)
-            </th>
-            <th>
-                        @Html.DisplayNameFor(model => model.FirstOrDefault().UpdatedDate)
-            </th>
-            <th>
-                        @Html.DisplayNameFor(model => model.FirstOrDefault().AdminCreated)
-            </th>
-            <th>
-                        @Html.DisplayNameFor(model => model.FirstOrDefault().AdminUpdated)
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Title)
             </th>
             @* <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Content)
             </th> *@
             <th>
-                        @Html.DisplayNameFor(model => model.FirstOrDefault().Status)
+                    @Html.DisplayNameFor(model => model.FirstOrDefault().Image)
+            </th>
+            @* <th>
+                @Html.DisplayNameFor(model => model.MetaTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MainKeyword)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MetaKeyword)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MetaDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Slug)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Views)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Likes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Star)
+            </th> *@
+            <th>
+                    @Html.DisplayNameFor(model => model.FirstOrDefault().CreatedDate)
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.FirstOrDefault().UpdatedDate)
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.FirstOrDefault().AdminCreated)
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.FirstOrDefault().AdminUpdated)
+            </th>
+            <th>
+                    @Html.DisplayNameFor(model => model.FirstOrDefault().Status)
             </th>
             @* <th>
                 @Html.DisplayNameFor(model => model.Isdelete)
@@ -90,17 +91,44 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            @* <td>
+                @Html.DisplayFor(modelItem => item.Code)
+            </td> *@
             <td>
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
+            @* <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
             <td>
-                <img src="@item.Logo" alt="@item.Title" width="35px" height="35px">
+                @Html.DisplayFor(modelItem => item.Content)
+            </td> *@
+            <td>
+                <img src="@item.Image" alt="@item.Title" width="35px" height="35px">
             </td>
             @* <td>
-                @Html.DisplayFor(modelItem => item.Url)
+                @Html.DisplayFor(modelItem => item.MetaTitle)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Orders)
+                @Html.DisplayFor(modelItem => item.MainKeyword)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MetaKeyword)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MetaDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Slug)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Views)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Likes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Star)
             </td> *@
             <td>
                 @Html.DisplayFor(modelItem => item.CreatedDate)
@@ -114,9 +142,6 @@
             <td>
                 @Html.DisplayFor(modelItem => item.AdminUpdated)
             </td>
-            @* <td>
-                @Html.DisplayFor(modelItem => item.Content)
-            </td> *@
             <td>
                 @Html.DisplayFor(modelItem => item.Status)
             </td>
@@ -139,6 +164,6 @@
         LiElementClasses = new string[] {"page-item"},
         PageClasses = new string[] {"page-link"}
         })
-</div>
+    </div>
 </body>
 </html>

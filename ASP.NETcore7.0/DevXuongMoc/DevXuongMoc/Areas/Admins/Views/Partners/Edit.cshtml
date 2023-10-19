@@ -1,9 +1,9 @@
 ﻿@model DevXuongMoc.Models.Partner
 
 @{
-    Layout = null;
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
 }
-
 <!DOCTYPE html>
 
 <html>
@@ -27,7 +27,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Logo" class="control-label"></label>
-                <input asp-for="Logo" class="form-control" />
+                <input asp-for="Logo" type="file" class="form-control" />
                 <span asp-validation-for="Logo" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -83,7 +83,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a class="btn btn-info" asp-action="Index">Back to List</a>
 </div>
 
 </body>

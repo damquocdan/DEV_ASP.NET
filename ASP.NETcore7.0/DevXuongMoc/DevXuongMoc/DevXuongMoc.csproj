@@ -24,6 +24,8 @@
   <ItemGroup>
     <Folder Include="Areas\Admins\Data\" />
     <Folder Include="wwwroot\images\adminUsers\" />
+    <Folder Include="wwwroot\images\categories\" />
+    <Folder Include="wwwroot\images\banners\" />
   </ItemGroup>
 
 </Project>

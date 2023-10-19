@@ -12,6 +12,29 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Lesson07.Assignment.styles.css" asp-append-version="true" />
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="~/plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="~/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="~/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="~/plugins/jqvmap/jqvmap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="~/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="~/plugins/daterangepicker/daterangepicker.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="~/plugins/summernote/summernote-bs4.min.css">
 </head>
 <body>
     <div class="row">
@@ -24,60 +47,38 @@
             <a asp-action="Create" class="btn btn-primary"><i class="fas fa-plus"></i>Thêm mới</a>
         </form>
     
-<table class="table">
+<table class="table" >
     <thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.FirstOrDefault().Account)
             </th>
-            <th>
-                        @Html.DisplayNameFor(model => model.FirstOrDefault().Password)
-            </th>
-            <th>
-                        @Html.DisplayNameFor(model => model.FirstOrDefault().MaNhanSu)
-            </th>
+            
+            
             <th>
                         @Html.DisplayNameFor(model => model.FirstOrDefault().Name)
             </th>
-            <th>
-                        @Html.DisplayNameFor(model => model.FirstOrDefault().Phone)
-            </th>
+            
             <th>
                         @Html.DisplayNameFor(model => model.FirstOrDefault().Email)
             </th>
             <th>
                         @Html.DisplayNameFor(model => model.FirstOrDefault().Avatar)
             </th>
-            <th>
-                        @Html.DisplayNameFor(model => model.FirstOrDefault().IdPhongBan)
-            </th>
+            
             <th>
                         @Html.DisplayNameFor(model => model.FirstOrDefault().NgayTao)
             </th>
-            <th>
-                        @Html.DisplayNameFor(model => model.FirstOrDefault().NguoiTao)
-            </th>
-            <th>
-                        @Html.DisplayNameFor(model => model.FirstOrDefault().NgayCapNhat)
-            </th>
-            <th>
-                        @Html.DisplayNameFor(model => model.FirstOrDefault().NguoiCapNhat)
-            </th>
-            <th>
-                        @Html.DisplayNameFor(model => model.FirstOrDefault().SessionToken)
-            </th>
-            <th>
-                        @Html.DisplayNameFor(model => model.FirstOrDefault().Salt)
-            </th>
-            <th>
-                        @Html.DisplayNameFor(model => model.FirstOrDefault().IsAdmin)
-            </th>
+            
+            
+            
+            
+            
+            
             <th>
                         @Html.DisplayNameFor(model => model.FirstOrDefault().TrangThai)
             </th>
-            <th>
-                        @Html.DisplayNameFor(model => model.FirstOrDefault().IsDelete)
-            </th>
+            
             <th></th>
         </tr>
     </thead>
@@ -87,58 +88,36 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Account)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Password)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MaNhanSu)
-            </td>
+            
+            
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Phone)
-            </td>
+            
             <td>
                 @Html.DisplayFor(modelItem => item.Email)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Avatar)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdPhongBan)
-            </td>
+            
             <td>
                 @Html.DisplayFor(modelItem => item.NgayTao)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NguoiTao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NgayCapNhat)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NguoiCapNhat)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SessionToken)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Salt)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IsAdmin)
-            </td>
+            
+            
+            
+            
+            
+            
             <td>
                 @Html.DisplayFor(modelItem => item.TrangThai)
             </td>
+            
             <td>
-                @Html.DisplayFor(modelItem => item.IsDelete)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
 }

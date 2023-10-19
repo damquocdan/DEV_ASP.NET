@@ -43,7 +43,7 @@ namespace DevXuongMoc.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            var adminUser = await _context.AdminUsers
+            var adminUser = await _context.AdminUsers.DefaultIfEmpty()
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (adminUser == null)
             {
@@ -134,7 +134,7 @@ namespace DevXuongMoc.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            var adminUser = await _context.AdminUsers
+            var adminUser = await _context.AdminUsers.DefaultIfEmpty()
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (adminUser == null)
             {

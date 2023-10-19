@@ -1,7 +1,8 @@
 ﻿@model DevXuongMoc.Models.Category
 
 @{
-    Layout = null;
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
 }
 
 <!DOCTYPE html>
@@ -25,7 +26,7 @@
             @Html.DisplayFor(model => model.Title)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Icon)
+            <img src="@Model.Icon"  alt="@Model.Title" width="100px" height="100px"/>
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Icon)
@@ -112,8 +113,8 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Delete" class="btn btn-danger" /> 
+        <a class="btn btn-info" asp-action="Index">Back to List</a>
     </form>
 </div>
 </body>

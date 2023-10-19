@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DevXuongMoc.Models;
+using X.PagedList;
 
 namespace DevXuongMoc.Areas.Admins.Controllers
 {
@@ -20,11 +21,18 @@ namespace DevXuongMoc.Areas.Admins.Controllers
         }
 
         // GET: Admins/Categories
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string name, int page=1)
         {
-              return _context.Categories != null ? 
-                          View(await _context.Categories.ToListAsync()) :
-                          Problem("Entity set 'DevXuongMocSqlContext.Categories'  is null.");
+            // Số bản ghi trên một trang
+            int limit = 5;
+            var category = await _context.Categories.OrderBy(c=>c.Id).ToPagedListAsync(page,limit);
+            // nếu có tham số name trên url
+            if (!String.IsNullOrEmpty(name))
+            {
+                category = await _context.Categories.Where(c => c.Title.Contains(name)).OrderBy(c => c.Id).ToPagedListAsync(page, limit);
+            }
+            ViewBag.keyword = name;
+            return View(category);
         }
 
         // GET: Admins/Categories/Details/5
@@ -60,6 +68,22 @@ namespace DevXuongMoc.Areas.Admins.Controllers
         {
             if (ModelState.IsValid)
             {
+                var files = HttpContext.Request.Form.Files;
+                if (files.Count() > 0 && files[0].Length>0)
+                {
+                    var file = files[0];
+                    var FileName = file.FileName;
+                    //upload ảnh vào thư mục wwwroot\\images\\category
+                    var path = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot\\images\\categories", FileName);
+                    using (var stream = new FileStream(path, FileMode.Create))
+                    {
+                        file.CopyTo(stream);
+                        category.Icon = "/images/categories" + FileName;
+                        // Gán tên cho thuộc tính Icon
+
+                    }
+                }
+                category.CreatedDate= DateTime.Now;
                 _context.Add(category);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -99,6 +123,22 @@ namespace DevXuongMoc.Areas.Admins.Controllers
             {
                 try
                 {
+                    var files = HttpContext.Request.Form.Files;
+                    if (files.Count() > 0 && files[0].Length > 0)
+                    {
+                        var file = files[0];
+                        var FileName = file.FileName;
+                        //upload ảnh vào thư mục wwwroot\\images\\category
+                        var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\categories", FileName);
+                        using (var stream = new FileStream(path, FileMode.Create))
+                        {
+                            file.CopyTo(stream);
+                            category.Icon = "/images/categories" + FileName;
+                            // Gán tên cho thuộc tính Icon
+
+                        }
+                    }
+                    category.UpdatedDate = DateTime.Now;
                     _context.Update(category);
                     await _context.SaveChangesAsync();
                 }

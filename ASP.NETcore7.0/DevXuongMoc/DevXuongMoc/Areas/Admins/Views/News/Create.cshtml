@@ -1,4 +1,4 @@
-﻿@model DevXuongMoc.Models.Category
+﻿@model DevXuongMoc.Models.News
 
 @{
     ViewData["Title"] = "Index";
@@ -14,26 +14,46 @@
 </head>
 <body>
 
-<h4>Category</h4>
+<h4>News</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create" enctype="multipart/form-data">
+        <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Code" class="control-label"></label>
+                <input asp-for="Code" class="form-control" />
+                <span asp-validation-for="Code" class="text-danger"></span>
+            </div>
             <div class="form-group">
                 <label asp-for="Title" class="control-label"></label>
                 <input asp-for="Title" class="form-control" />
                 <span asp-validation-for="Title" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Icon" class="control-label"></label>
-                <input asp-for="Icon" type="file" class="form-control" />
-                <span asp-validation-for="Icon" class="text-danger"></span>
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="MateTitle" class="control-label"></label>
-                <input asp-for="MateTitle" class="form-control" />
-                <span asp-validation-for="MateTitle" class="text-danger"></span>
+                <label asp-for="Content" class="control-label"></label>
+                <input asp-for="Content" class="form-control" />
+                <span asp-validation-for="Content" class="text-danger"></span>
+            </div>
+                <div class="form-group">
+                    <label asp-for="Image" class="control-label"></label>
+                    <input asp-for="Image" type="file" class="form-control" />
+                    <span asp-validation-for="Image" class="text-danger"></span>
+                </div>
+            <div class="form-group">
+                <label asp-for="MetaTitle" class="control-label"></label>
+                <input asp-for="MetaTitle" class="form-control" />
+                <span asp-validation-for="MetaTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MainKeyword" class="control-label"></label>
+                <input asp-for="MainKeyword" class="form-control" />
+                <span asp-validation-for="MainKeyword" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="MetaKeyword" class="control-label"></label>
@@ -51,14 +71,19 @@
                 <span asp-validation-for="Slug" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Orders" class="control-label"></label>
-                <input asp-for="Orders" class="form-control" />
-                <span asp-validation-for="Orders" class="text-danger"></span>
+                <label asp-for="Views" class="control-label"></label>
+                <input asp-for="Views" class="form-control" />
+                <span asp-validation-for="Views" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Parentid" class="control-label"></label>
-                <input asp-for="Parentid" class="form-control" />
-                <span asp-validation-for="Parentid" class="text-danger"></span>
+                <label asp-for="Likes" class="control-label"></label>
+                <input asp-for="Likes" class="form-control" />
+                <span asp-validation-for="Likes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Star" class="control-label"></label>
+                <input asp-for="Star" class="form-control" />
+                <span asp-validation-for="Star" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="AdminCreated" class="control-label"></label>
@@ -71,11 +96,6 @@
                 <span asp-validation-for="AdminUpdated" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Notes" class="control-label"></label>
-                <input asp-for="Notes" class="form-control" />
-                <span asp-validation-for="Notes" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
@@ -83,7 +103,7 @@
 </div>
 
 <div>
-    <a class="btn btn-warning" asp-action="Index">Back to List</a>
+    <a class="btn btn-info" asp-action="Index">Back to List</a>
 </div>
 
 </body>

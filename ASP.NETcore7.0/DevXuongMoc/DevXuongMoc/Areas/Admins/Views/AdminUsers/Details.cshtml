@@ -1,7 +1,8 @@
 ﻿@model DevXuongMoc.Models.AdminUser
 
 @{
-    Layout = null;
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
 }
 
 <!DOCTYPE html>
@@ -122,8 +123,8 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a class="btn btn-danger" asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> 
+    <a class="btn btn-info" asp-action="Index">Back to List</a>
 </div>
 </body>
 </html>

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DevXuongMoc.Models;
+using X.PagedList;
 
 namespace DevXuongMoc.Areas.Admins.Controllers
 {
@@ -20,13 +21,15 @@ namespace DevXuongMoc.Areas.Admins.Controllers
         }
 
         // GET: Admins/Banners
-        public async Task<IActionResult> Index(string name)
+        public async Task<IActionResult> Index(string name, int page = 1)
         {
-            var banner = await _context.Banners.ToListAsync();
-            //nếu có tham số name trên url
+            // Số bản ghi trên một trang
+            int limit = 5;
+            var banner = await _context.Banners.OrderBy(c => c.Id).ToPagedListAsync(page, limit);
+            // nếu có tham số name trên url
             if (!String.IsNullOrEmpty(name))
             {
-                banner = await _context.Banners.Where(c => c.Title.Contains(name)).ToListAsync();
+                banner = await _context.Banners.Where(c => c.Title.Contains(name)).OrderBy(c => c.Id).ToPagedListAsync(page, limit);
             }
             ViewBag.keyword = name;
             return View(banner);
