@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\DevXuongMoc.bundle.scp.css"
     },
     {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\css\\fonts.css",
+      "PackagePath": "staticwebassets\\css\\fonts.css"
+    },
+    {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -291,6 +295,122 @@
     {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\cau-thang\\019.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\cau-thang\\019.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\do-trang-tri\\020.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\do-trang-tri\\020.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\phong-bep\\004.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-bep\\004.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\phong-bep\\009.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-bep\\009.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\phong-khach\\001.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\001.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\phong-khach\\001a.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\001a.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\phong-khach\\001b.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\001b.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\phong-khach\\001c.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\001c.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\phong-khach\\001d.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\001d.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\phong-khach\\001e.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\001e.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\phong-khach\\002.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\002.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\phong-khach\\008.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\008.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\phong-khach\\009.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\009.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\phong-khach\\011.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\011.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\phong-khach\\012.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\012.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\phong-khach\\014.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\014.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\phong-khach\\015.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\015.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\phong-ngu\\003.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-ngu\\003.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\phong-ngu\\004.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-ngu\\004.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\phong-ngu\\007.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-ngu\\007.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\phong-ngu\\013.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-ngu\\013.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\phong-tam\\005.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-tam\\005.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\phong-tam\\006.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-tam\\006.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\phong-tam\\007.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-tam\\007.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\phong-tam\\008.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-tam\\008.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\tre-em\\016.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\tre-em\\016.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\tre-em\\017.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\tre-em\\017.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\tre-em\\018.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\tre-em\\018.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\van-phong\\018.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\van-phong\\018.jpg"
     },
     {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\js\\site.js",

@@ -83,7 +83,7 @@ namespace DevXuongMoc.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            var adminUser = await _context.AdminUsers.FindAsync(id);
+            var adminUser = await _context.AdminUsers.DefaultIfEmpty().FirstOrDefaultAsync(au=>au.Id==id);
             if (adminUser == null)
             {
                 return NotFound();
