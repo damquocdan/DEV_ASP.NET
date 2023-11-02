@@ -28,6 +28,12 @@ namespace DevXuongMoc.Controllers
         // GET: CartController
         public ActionResult Index()
         {
+            float total = 0;
+            foreach (var item in carts)
+            {
+                total += item.Quantity * item.Price;
+            }
+            ViewBag.total = total;
             return View(carts);
         }
 
