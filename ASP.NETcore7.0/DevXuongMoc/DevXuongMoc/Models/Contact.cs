@@ -1,17 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace DevXuongMoc.Models;
 
 public partial class Contact
 {
+
     public int Id { get; set; }
 
+
     public string? Title { get; set; }
+
 
     public string? Email { get; set; }
 
     public string? Phone { get; set; }
+
 
     public string? Address { get; set; }
 

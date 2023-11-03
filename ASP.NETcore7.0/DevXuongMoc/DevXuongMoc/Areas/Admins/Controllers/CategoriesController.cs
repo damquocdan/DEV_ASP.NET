@@ -10,8 +10,8 @@ using X.PagedList;
 
 namespace DevXuongMoc.Areas.Admins.Controllers
 {
-    [Area("Admins")]
-    public class CategoriesController : Controller
+    //[Area("Admins")]
+    public class CategoriesController : BaseController
     {
         private readonly DevXuongMocSqlContext _context;
 
@@ -25,11 +25,11 @@ namespace DevXuongMoc.Areas.Admins.Controllers
         {
             // Số bản ghi trên một trang
             int limit = 5;
-            var category = await _context.Categories.OrderBy(c=>c.Id).ToPagedListAsync(page,limit);
+            var category = await _context.Categories.OrderBy(c=>c.Id).DefaultIfEmpty().ToPagedListAsync(page,limit);
             // nếu có tham số name trên url
             if (!String.IsNullOrEmpty(name))
             {
-                category = await _context.Categories.Where(c => c.Title.Contains(name)).OrderBy(c => c.Id).ToPagedListAsync(page, limit);
+                category = await _context.Categories.Where(c => c.Title.Contains(name)).OrderBy(c => c.Id).DefaultIfEmpty().ToPagedListAsync(page, limit);
             }
             ViewBag.keyword = name;
             return View(category);
@@ -43,7 +43,7 @@ namespace DevXuongMoc.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            var category = await _context.Categories
+            var category = await _context.Categories.DefaultIfEmpty()
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (category == null)
             {
@@ -99,7 +99,7 @@ namespace DevXuongMoc.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            var category = await _context.Categories.FindAsync(id);
+            var category = await _context.Categories.DefaultIfEmpty().FirstOrDefaultAsync(au => au.Id == id);
             if (category == null)
             {
                 return NotFound();
@@ -166,7 +166,7 @@ namespace DevXuongMoc.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            var category = await _context.Categories
+            var category = await _context.Categories.DefaultIfEmpty()
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (category == null)
             {

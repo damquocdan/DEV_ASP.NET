@@ -11,8 +11,8 @@ using X.PagedList;
 
 namespace DevXuongMoc.Areas.Admins.Controllers
 {
-    [Area("Admins")]
-    public class AdminUsersController : Controller
+    //[Area("Admins")]
+    public class AdminUsersController : BaseController
     {
         private readonly DevXuongMocSqlContext _context;
 

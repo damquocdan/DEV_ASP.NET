@@ -11,10 +11,15 @@ public partial class AdminUser
     [Key]
     public int Id { get; set; }
 
-    [Required(ErrorMessage ="Không được để trống")]
+    [
+        Required(ErrorMessage ="Không được để trống"),
+        MinLength(6, ErrorMessage = "Họ tên ít nhất là 6 ký tự"),
+        MaxLength(20, ErrorMessage = "Họ tên tối đa 20 ký tự")
+    ]
     public string? Account { get; set; }
 
     [Required(ErrorMessage = "Không được để trống")]
+    [DataType(DataType.Password)]
     public string? Password { get; set; }
 
     [Required(ErrorMessage = "Không được để trống")]
@@ -24,6 +29,7 @@ public partial class AdminUser
     [Required(ErrorMessage = "Không được để trống")]
     public string? Phone { get; set; }
     [Required(ErrorMessage = "Không được để trống")]
+    [RegularExpression(@"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}", ErrorMessage = "Địa chỉ email không đúng định dạng")]
     public string? Email { get; set; }
     [Required(ErrorMessage = "Không được để trống")]
     public string? Avatar { get; set; }

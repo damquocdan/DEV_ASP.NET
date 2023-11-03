@@ -9,8 +9,8 @@ using DevXuongMoc.Models;
 
 namespace DevXuongMoc.Areas.Admins.Controllers
 {
-    [Area("Admins")]
-    public class ContactsController : Controller
+    //[Area("Admins")]
+    public class ContactsController : BaseController
     {
         private readonly DevXuongMocSqlContext _context;
 

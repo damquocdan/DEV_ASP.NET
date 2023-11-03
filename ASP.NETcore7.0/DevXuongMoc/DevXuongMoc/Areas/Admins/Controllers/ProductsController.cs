@@ -6,11 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DevXuongMoc.Models;
+using X.PagedList;
 
 namespace DevXuongMoc.Areas.Admins.Controllers
 {
-    [Area("Admins")]
-    public class ProductsController : Controller
+    //[Area("Admins")]
+    public class ProductsController : BaseController
     {
         private readonly DevXuongMocSqlContext _context;
 
@@ -20,11 +21,18 @@ namespace DevXuongMoc.Areas.Admins.Controllers
         }
 
         // GET: Admins/Products
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string name, int page = 1)
         {
-              return _context.Products != null ? 
-                          View(await _context.Products.ToListAsync()) :
-                          Problem("Entity set 'DevXuongMocSqlContext.Products'  is null.");
+            // số bản ghi trêm một trang
+            int limit = 5;
+            var productUsers = await _context.Products.DefaultIfEmpty().OrderBy(au => au.Id).ToPagedListAsync(page, limit);
+            // nếucos tham số name trên url
+            if (!String.IsNullOrEmpty(name))
+            {
+                productUsers = await _context.Products.DefaultIfEmpty().Where(pu => pu.Title.Contains(name)).OrderBy(pu => pu.Id).ToPagedListAsync(page, limit);
+            }
+            ViewBag.keyword = name;
+            return View(productUsers);
         }
 
         // GET: Admins/Products/Details/5
@@ -35,7 +43,7 @@ namespace DevXuongMoc.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            var product = await _context.Products
+            var product = await _context.Products.DefaultIfEmpty()
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (product == null)
             {
@@ -75,7 +83,7 @@ namespace DevXuongMoc.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            var product = await _context.Products.FindAsync(id);
+            var product = await _context.Products.DefaultIfEmpty().FirstOrDefaultAsync(pu => pu.Id == id);
             if (product == null)
             {
                 return NotFound();

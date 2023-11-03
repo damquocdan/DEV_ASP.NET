@@ -52,69 +52,12 @@
                 @Html.DisplayNameFor(model => model.Title)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Content)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Image)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MetaTitle)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MetaKeyword)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MetaDescription)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Slug)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PriceOld)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PriceNew)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Size)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Views)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Likes)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Star)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Home)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Hot)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreatedDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UpdatedDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AdminCreated)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AdminUpdated)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Status)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Isdelete)
-            </th>
-            <th></th>
+            
         </tr>
     </thead>
     <tbody>
@@ -130,72 +73,16 @@
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Content)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Image)
+                        <img src="@item.Image" alt="@item.Title" width="35px" height="35px">
             </td>
+            
             <td>
-                @Html.DisplayFor(modelItem => item.MetaTitle)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MetaKeyword)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MetaDescription)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Slug)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PriceOld)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PriceNew)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Size)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Views)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Likes)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Star)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Home)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Hot)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UpdatedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AdminCreated)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AdminUpdated)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Isdelete)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a> 
+                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Details</a> 
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
             </td>
         </tr>
 }

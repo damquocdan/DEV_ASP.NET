@@ -297,6 +297,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\logo.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\logo.jpg"
+    },
+    {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\cau-thang\\019.jpg",
       "PackagePath": "staticwebassets\\images\\products\\cau-thang\\019.jpg"
     },

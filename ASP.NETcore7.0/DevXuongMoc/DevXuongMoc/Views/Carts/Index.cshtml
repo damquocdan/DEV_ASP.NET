@@ -3,127 +3,143 @@
     ViewData["Title"] = "Danh sách sản phẩm";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div class="row bg-white">
-    <div class="row">
-        <div class="cart">
-            <h2>GIỎ HÀNG</h2>
-            <div class="box-cart">
-                <div class="box-cart-item-box">
-                    @foreach (var item in Model)
-                    {
-                        <div class="box-cart-border-bottom d-flex justify-content-between align-items-center">
 
-                            <div class="box-cart-item d-flex justify-content-start align-items-center">
-
-                                <img src="@item.Image" alt="@item.Name" class="box-cart-item-img" width="100px"/>
-
-                                <div class="d-flex flex-column">
-                                    <h5>@item.Name</h5>
-                                    <div class="box-cart-item-btn">
-
-                                        <button class="btn qty_btn">
-                                            <i class="fa fa-minus"></i>
-                                        </button>
-                                        <input type="number" class="qty_input" value="@item.Quantity" />
-
-                                        <button class="btn qty_btn">
-                                            <i class="fa fa-plus"></i>
-                                        </button>
-
-                                    </div>
-                                    <p>
-                                        Giá:
-
-                                        <span>@string.Format("{0:#,##0}",@item.Price)VND</span>
-                                    </p>
+<div class="row">
+    <div class="col-md-12 cart ">
+        <h2>GIỎ HÀNG</h2>
+        <div class="box-cart">
+            <div class="box-cart-item-box">
+                @foreach (var item in Model)
+                {
+                    var money = item.Price * item.Quantity;
+                    <div class="box-cart-border-bottom d-flex justify-content-between align-items-center">
+                        <div class="box-cart-item d-flex justify-content-start align-items-center">
+                            <img src="@item.Image" alt="@item.Name" class="box-cart-item-img" />
+                            <div class="d-flex flex-column">
+                                <h5>@item.Name</h5>
+                                <div class="box-cart-item-btn">
+                                    <button class="btn qty_btn"><i class="fa fa-minus"></i></button>
+                                    <input type="number" class="qty_input" value="@item.Quantity" />
+                                    <button class="btn qty_btn"><i class="fa fa-plus"></i></button>
                                 </div>
-                            </div>
-
-                            <div class="btn-action">
-                                <a href="/carts/remove/?id=@item.Id" class="btn remove">
-                                    <i class="fa-solid fa-xmark"></i>
-                                </a>
-
-                                <a href="/carts/?id=@item.Id" data-id="@item.Id" data- qty="@item.Quantity"
-                                   class="btn update">Cập nhật</a>
-
+                                <p data-price="@item.Price">Giá: <span>@string.Format("{0:#,##0}",@item.Price)</span>VND</p>
+                                <p data-money="@money" class="total-money">Thành tiền: <span id="money">@string.Format("{0:#,##0}",@money)</span>VND</p>
                             </div>
                         </div>
-                    }
-                </div>
-                <div class="box-cart-bill">
-                    <h3> Tóm tắt đơn hàng </h3>
-                    <p>Tổng thành tiền:</p>
-                    <p>
-                        Phí vận chuyển: <span class="ship-money">Free Ship</span><br>
-                        <small>( Miễn phí vận chuyển với đơn hàng trên 10 triệu )</small>
-                    </p>
-
-                    <p>
-                        Thông tin vận chuyển: Sản phẩm sẽ được Hoàng Hoan giao trong vòng
-
-                        2-7 ngày.
-                        Chi tiết liên hệ
-                        <a href="tel:0978611889">0978 611 889</a>
-                    </p>
-                    <div class="cart-box cart-layout">
-                        <div class="total-price">
-                            Tổng tiền :<span> 24.000.000&nbsp;VND</span>
+                        <div class="btn-action">
+                            <a href="/carts/remove/?id=@item.Id" class="btn remove"><i class="fa-solid fa-xmark"></i></a>
+                            <a href="/carts/update/?id=@item.Id&quantity=@item.Quantity" data-id="@item.Id" data-qty="@item.Quantity" class="btn update">Cập nhật</a>
                         </div>
-
-                        <div class="group-btn">
-
-                            <a href="/carts/orders" class="btn">Đặt hàng ngay</a>
-                            <a href="/product" class="btn">Tiếp tục mua hàng</a>
-                        </div>
+                    </div>
+                }
+                
+            </div>
+            <div class="box-cart-bill">
+                 <h3> Tóm tắt đơn hàng </h3>
+                 <p>Tổng thành tiền:<span id="totalMoney">
+                        @string.Format("{0:#,##0}",ViewBag.total)</span> VND</p>
+                 <p>Phí vận chuyển: <span class="ship-money">Free Ship</span><br>
+                     <small>( Miễn phí vận chuyển với đơn hàng trên 10 triệu )</small>
+                 </p>
+                 <p>Thông tin vận chuyển: Sản phẩm sẽ được Hoàng Hoan giao trong vòng 2-7 ngày. 
+                     Chi tiết liên hệ
+                    <a href="tel:0978611889">0978 611 889</a>
+                </p>
+                <div class="cart-box cart-layout">
+                    <div>
+                        Tổng tiền :<span id="totalMoneyPay"> @string.Format("{0:#,##0}",ViewBag.total) </span> VND
+                    </div>
+                    <div class="group-btn">
+                        <a href="/cart/orders" class="btn">Đặt hàng ngay</a>
+                        <a href="/product" class="btn">Tiếp tục mua hàng</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.qty_btn .fa-minus').click(function () {
-                let qty = parseInt($(this).parent().siblings('.qty_input').val());
-                qty -= 1;
-                $(this).parent().siblings('.qty_input').val(qty);
-
-                let id = $(this).parent().parent().parent().parent().siblings('.btn-action').children('.update').attr("data-id");
-
-                          
-
-                            let href = "/carts/Update/?id=" + id + "&quantity=" + qty;
-
-                $(this).parent().parent().parent().parent().siblings('.btn-action').children('.update').attr("href", href);
-
-                            })
-            $('.qty_btn .fa-plus').click(function () {
-                let qty = parseInt($(this).parent().siblings('.qty_input').val());
-                qty += 1;
-                $(this).parent().siblings('.qty_input').val(qty);
-
-                let id = $(this).parent().parent().parent().parent().siblings('.btn-action').children('.update').attr("data-id");
-
-                
-                            let href = "/carts/Update/?id=" + id + "&quantity=" + qty;
-
-                $(this).parent().parent().parent().parent().siblings('.btn-action').children('.update').attr("href", href);
-
-                            })
-            $('.qty_input').change(function () {
-                let qty = parseInt($(this).val());
-
-                let id = $(this).parent().parent().parent().siblings('.btn-action').children('.update').attr("data-id");
-
-                            console.log("Change", qty, id);
-
-                console.log($(this).parent().parent().parent().siblings('.btn-action').children('.update'));
-
-                            let href = "/carts/Update/?id=" + id + "&quantity=" + qty;
-
-                $(this).parent().parent().parent().siblings('.btn-action').children('.update').attr("href", href);
-
-                            })
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.qty_btn .fa-minus').click(function () {
+            let qty=parseInt($(this).parent().siblings('.qty_input').val());
+            let price = parseFloat($(this).parent().parent().siblings('p').attr("data-price"));
+            qty -=1;
+            let money = qty * price;
+            $(this).parent().siblings('.qty_input').val(qty);
+            let id = $(this).parent().parent().parent().parent().siblings('.btn-action').children('.update').attr("data-id");
+            let href="/carts/Update/?id="+id+"&quantity="+qty;
+            $(this).parent().parent().parent().parent().siblings('.btn-action').children('.update').attr("href", href);
+            $(this).parent().parent().siblings('p').attr("data-money", money);
+            let total_money = formatMoney(money, 0, ",", ".");
+            $(this).parent().parent().siblings('p').children("span#money").text(total_money);
+            let totalMoney = formatMoney(total(),0,",",".");
+            $("#totalMoney").text(totalMoney);
+            $("#totalMoneyPay").text(totalMoney);
         })
-    </script></div>
+        $('.qty_btn .fa-plus').click(function () {
+            let qty = parseInt($(this).parent().siblings('.qty_input').val());
+            let price = parseFloat($(this).parent().parent().siblings('p').attr("data-price"));
+            qty += 1;
+            let money = qty * price;
+            $(this).parent().siblings('.qty_input').val(qty);
+            let id = $(this).parent().parent().parent().parent().siblings('.btn-action').children('.update').attr("data-id");
+            let href="/carts/Update/?id="+id+"&quantity="+qty;
+            $(this).parent().parent().parent().parent().siblings('.btn-action').children('.update').attr("href", href);
+            $(this).parent().parent().siblings('p').attr("data-money", money);
+            let total_money = formatMoney(money, 0, ",", ".");
+            $(this).parent().parent().siblings('p').children("span#money").text(total_money);
+            let totalMoney = formatMoney(total(),0,",",".");
+            $("#totalMoney").text(totalMoney);
+            $("#totalMoneyPay").text(totalMoney);
+        })
+        $('.qty_input').change(function () {
+            let qty = parseInt($(this).val());
+            let id = $(this).parent().parent().parent().siblings('.btn-action').children('.update').attr("data-id");
+            let price = parseFloat($(this).parent().siblings('p').attr("data-price"));
+            let money = qty * price;
+            let href = "/carts/Update/?id=" + id + "&quantity=" + qty;
+            $(this).parent().parent().parent().siblings('.btn-action').children('.update').attr("href", href);
+            $(this).parent().parent().siblings('p').attr("data-money", money);
+            let total_money = formatMoney(money, 0, ",", ".");
+            $(this).parent().siblings('p').children("span#money").text(total_money)
+            let totalMoney = formatMoney(total(),0,",",".");
+            $("#totalMoney").text(totalMoney);
+            $("#totalMoneyPay").text(totalMoney);
+        })
+
+        function total(){
+            let totalMoney = 0;
+            $("p.total-money").each(function(){
+                console.log($(this));
+                console.log($(this).attr("data-money"));
+                let money = parseFloat($(this).attr("data-money"));
+                console.log("total-money",money );
+                totalMoney += money;
+            });
+            return totalMoney;
+        }
+
+        total();
+
+    })
+
+    function formatMoney(amount, decimalCount = 2, decimal = ".", thousands = ",") {
+        try {
+            decimalCount = Math.abs(decimalCount);
+            decimalCount = isNaN(decimalCount) ? 2 : decimalCount;
+
+            const negativeSign = amount < 0 ? "-" : "";
+
+            let i = parseInt(amount = Math.abs(Number(amount) || 0).toFixed(decimalCount)).toString();
+            let j = (i.length > 3) ? i.length % 3 : 0;
+
+            return negativeSign +
+                (j ? i.substr(0, j) + thousands : '') +
+                i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + thousands) +
+                (decimalCount ? decimal + Math.abs(amount - i).toFixed(decimalCount).slice(2) : "");
+        } catch (e) {
+            console.log(e)
+        }
+    };
+</script>

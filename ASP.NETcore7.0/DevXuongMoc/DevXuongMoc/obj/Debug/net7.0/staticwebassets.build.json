@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4jqTazU0sso0uWkS3qkMs5IqGKWAvyAscyk62chBNgQ=",
+  "Hash": "na1DkZuo8wenOrmeoZ9rspmtd/C9Mty4UwOqa7DbCsY=",
   "Source": "DevXuongMoc",
   "BasePath": "_content/DevXuongMoc",
   "Mode": "Default",
@@ -1290,6 +1290,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\logo.jpg",
+      "SourceId": "DevXuongMoc",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\",
+      "BasePath": "_content/DevXuongMoc",
+      "RelativePath": "images/anhcat/logo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\anhcat\\logo.jpg"
     },
     {
       "Identity": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\cau-thang\\019.jpg",

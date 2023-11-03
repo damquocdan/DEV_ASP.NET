@@ -10,8 +10,8 @@ using X.PagedList;
 
 namespace DevXuongMoc.Areas.Admins.Controllers
 {
-    [Area("Admins")]
-    public class BannersController : Controller
+    //[Area("Admins")]
+    public class BannersController : BaseController
     {
         private readonly DevXuongMocSqlContext _context;
 
@@ -25,11 +25,11 @@ namespace DevXuongMoc.Areas.Admins.Controllers
         {
             // Số bản ghi trên một trang
             int limit = 5;
-            var banner = await _context.Banners.OrderBy(c => c.Id).ToPagedListAsync(page, limit);
+            var banner = await _context.Banners.OrderBy(b => b.Id).DefaultIfEmpty().ToPagedListAsync(page, limit);
             // nếu có tham số name trên url
             if (!String.IsNullOrEmpty(name))
             {
-                banner = await _context.Banners.Where(c => c.Title.Contains(name)).OrderBy(c => c.Id).ToPagedListAsync(page, limit);
+                banner = await _context.Banners.Where(b => b.Title.Contains(name)).OrderBy(b => b.Id).DefaultIfEmpty().ToPagedListAsync(page, limit);
             }
             ViewBag.keyword = name;
             return View(banner);
@@ -43,7 +43,7 @@ namespace DevXuongMoc.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            var banner = await _context.Banners
+            var banner = await _context.Banners.DefaultIfEmpty()
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (banner == null)
             {
@@ -99,7 +99,7 @@ namespace DevXuongMoc.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            var banner = await _context.Banners.FindAsync(id);
+            var banner = await _context.Banners.DefaultIfEmpty().FirstOrDefaultAsync(bn => bn.Id == id);
             if (banner == null)
             {
                 return NotFound();
@@ -166,7 +166,7 @@ namespace DevXuongMoc.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            var banner = await _context.Banners
+            var banner = await _context.Banners.DefaultIfEmpty()
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (banner == null)
             {

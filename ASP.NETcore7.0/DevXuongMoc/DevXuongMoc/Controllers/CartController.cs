@@ -26,7 +26,7 @@ namespace DevXuongMoc.Controllers
             base.OnActionExecuting(context);
         }
         // GET: CartController
-        public ActionResult Index()
+        public IActionResult Index()
         {
             float total = 0;
             foreach (var item in carts)
@@ -47,7 +47,7 @@ namespace DevXuongMoc.Controllers
             }
             else // Nếu sản phẩm chưa có trong giỏ hàng, thêm sản phẩm vào giỏ hàng
             {
-                var p = _context.Products.Find(id);// tìm sản phẩm cần mua trong bảng sản phẩm
+                var p = _context.Products.Where(x=>x.Id==id).DefaultIfEmpty().FirstOrDefault();// tìm sản phẩm cần mua trong bảng sản phẩm
                 // tạo mới một sản phẩm để thêm vào giỏ hàng
                 var item = new Cart()
                 {
@@ -84,8 +84,7 @@ namespace DevXuongMoc.Controllers
         }
 
 
-        public IActionResult Update(int id, int quantity)
-        {
+        public IActionResult Update(int id, int quantity) {
             if (carts.Any(c => c.Id == id))
             {
                 // tìm kiếm sản phẩm trong giỏ hnafg và cập nhật lại số lượng mới

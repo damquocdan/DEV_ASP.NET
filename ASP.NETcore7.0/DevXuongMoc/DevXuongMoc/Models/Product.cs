@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace DevXuongMoc.Models;
 
 public partial class Product
 {
+    [Key]
     public int Id { get; set; }
 
+    [Required]
     public int? Cid { get; set; }
 
     public string? Code { get; set; }

@@ -10,8 +10,8 @@ using X.PagedList;
 
 namespace DevXuongMoc.Areas.Admins.Controllers
 {
-    [Area("Admins")]
-    public class NewsController : Controller
+    //[Area("Admins")]
+    public class NewsController : BaseController
     {
         private readonly DevXuongMocSqlContext _context;
 
@@ -25,11 +25,11 @@ namespace DevXuongMoc.Areas.Admins.Controllers
         {
             // Số bản ghi trên một trang
             int limit = 5;
-            var news = await _context.News.OrderBy(c => c.Id).ToPagedListAsync(page, limit);
+            var news = await _context.News.OrderBy(c => c.Id).DefaultIfEmpty().ToPagedListAsync(page, limit);
             // nếu có tham số name trên url
             if (!String.IsNullOrEmpty(name))
             {
-                news = await _context.News.Where(c => c.Title.Contains(name)).OrderBy(c => c.Id).ToPagedListAsync(page, limit);
+                news = await _context.News.Where(c => c.Title.Contains(name)).OrderBy(c => c.Id).DefaultIfEmpty().ToPagedListAsync(page, limit);
             }
             ViewBag.keyword = name;
             return View(news);
@@ -43,7 +43,7 @@ namespace DevXuongMoc.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            var news = await _context.News
+            var news = await _context.News.DefaultIfEmpty()
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (news == null)
             {
@@ -99,7 +99,7 @@ namespace DevXuongMoc.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            var news = await _context.News.FindAsync(id);
+            var news = await _context.News.DefaultIfEmpty().FirstOrDefaultAsync(n => n.Id == id);
             if (news == null)
             {
                 return NotFound();
@@ -166,7 +166,7 @@ namespace DevXuongMoc.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            var news = await _context.News
+            var news = await _context.News.DefaultIfEmpty()
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (news == null)
             {

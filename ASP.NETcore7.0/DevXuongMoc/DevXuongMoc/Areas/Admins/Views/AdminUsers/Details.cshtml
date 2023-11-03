@@ -17,6 +17,7 @@
 <div>
     <h4>AdminUser</h4>
     <hr />
+    <div class="table">
     <dl class="row">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Account)
@@ -120,7 +121,8 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.IsDelete)
         </dd>
-    </dl>
+            </dl>
+        </div>
 </div>
 <div>
     <a class="btn btn-danger" asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> 

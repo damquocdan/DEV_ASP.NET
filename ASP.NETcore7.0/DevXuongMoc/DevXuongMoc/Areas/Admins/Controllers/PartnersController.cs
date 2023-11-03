@@ -10,8 +10,8 @@ using X.PagedList;
 
 namespace DevXuongMoc.Areas.Admins.Controllers
 {
-    [Area("Admins")]
-    public class PartnersController : Controller
+    //[Area("Admins")]
+    public class PartnersController : BaseController
     {
         private readonly DevXuongMocSqlContext _context;
 
@@ -25,11 +25,11 @@ namespace DevXuongMoc.Areas.Admins.Controllers
         {
             // Số bản ghi trên một trang
             int limit = 5;
-            var partner = await _context.Partners.OrderBy(c => c.Id).ToPagedListAsync(page, limit);
+            var partner = await _context.Partners.OrderBy(c => c.Id).DefaultIfEmpty().ToPagedListAsync(page, limit);
             // nếu có tham số name trên url
             if (!String.IsNullOrEmpty(name))
             {
-                partner = await _context.Partners.Where(c => c.Title.Contains(name)).OrderBy(c => c.Id).ToPagedListAsync(page, limit);
+                partner = await _context.Partners.Where(c => c.Title.Contains(name)).OrderBy(c => c.Id).DefaultIfEmpty().ToPagedListAsync(page, limit);
             }
             ViewBag.keyword = name;
             return View(partner);
@@ -43,7 +43,7 @@ namespace DevXuongMoc.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            var partner = await _context.Partners
+            var partner = await _context.Partners.DefaultIfEmpty()
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (partner == null)
             {

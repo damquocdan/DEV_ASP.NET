@@ -18,6 +18,7 @@
 <div>
     <h4>AdminUser</h4>
     <hr />
+    <div class="table">
     <dl class="row">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Account)
@@ -122,6 +123,7 @@
             @Html.DisplayFor(model => model.IsDelete)
         </dd>
     </dl>
+        </div>
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />

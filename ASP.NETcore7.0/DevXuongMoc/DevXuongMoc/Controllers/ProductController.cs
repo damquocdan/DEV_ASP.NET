@@ -13,7 +13,7 @@ namespace DevXuongMoc.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var data = await _context.Products.ToListAsync();
+            var data = await _context.Products.DefaultIfEmpty().ToListAsync();
 
             return View(data);
         }
