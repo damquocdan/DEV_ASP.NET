@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="~/DevXuongMoc.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header style="display:flex; padding:1rem 10%;box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1); align-items:center;justify-content:space-around;">
+    <header style="display:flex; padding:1rem 10%; align-items:center;justify-content:space-around;" class="shadow">
         <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
             <img class="logo" src="./images/anhcat/logo.jpg" alt="logo" />
         </a>
@@ -21,25 +21,25 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-around" style="width:700px;">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-around" style="width:900px;">
                     <ul class="navbar-nav flex-grow-3" style="font-size:18px;">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a>
+                            <a class="nav-link text-dark p-3" asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Giới thiệu</a>
+                            <a class="nav-link text-dark p-3" asp-area="" asp-controller="Home" asp-action="Privacy">Giới thiệu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Sản phẩm</a>
+                            <a class="nav-link text-dark p-3" asp-area="" asp-controller="Product" asp-action="Index">Sản phẩm</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Tin tức</a>
+                            <a class="nav-link text-dark p-3" asp-area="" asp-controller="Product" asp-action="Index">Tin tức</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Đối tác</a>
+                            <a class="nav-link text-dark p-3" asp-area="" asp-controller="Product" asp-action="Index">Đối tác</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Liên hệ</a>
+                            <a class="nav-link text-dark p-3" asp-area="" asp-controller="Product" asp-action="Index">Liên hệ</a>
                         </li>
                     </ul>
                 </div>
@@ -65,8 +65,8 @@
             
         </div>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div>
+        <main role="main" class="">
             @RenderBody()
         </main>
     </div>

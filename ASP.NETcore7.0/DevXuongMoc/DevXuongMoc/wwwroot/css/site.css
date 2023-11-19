@@ -236,3 +236,37 @@ footer {
     background-color: #fff;
     border: 2px solid var(--color);
 }
+
+.home-banner {
+    background-image:url(../images/anhcat/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 8rem 10% 16rem 10%;
+}
+}.home-contact__content{
+     padding-left:2rem;
+ }
+.home-banner__content h1 {
+    font-family: Gotham-Ultra;
+    text-transform: uppercase;
+    color: var(--color);
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+.home-banner__content p {
+    max-width: 30rem;
+    margin-bottom: 0.75rem;
+}
+.home-banner__btn {
+    text-transform: uppercase;
+    font-family: Gotham-Ultra;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #bd945f;
+    border: 0.2rem solid #bd945f;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+}

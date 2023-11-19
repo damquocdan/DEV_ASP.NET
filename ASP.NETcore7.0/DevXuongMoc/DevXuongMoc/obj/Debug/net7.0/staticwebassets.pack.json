@@ -297,6 +297,222 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner.html",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner.html"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\01.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\01.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\02.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\02.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\05.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\05.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\06.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\06.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\all.min.css",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\all.min.css"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\bao-hanh.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\bao-hanh.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\bootstrap.bundle.min.js.download",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\bootstrap.bundle.min.js.download"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\chat-luong.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\chat-luong.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\chatluong.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\chatluong.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\chinh-sach.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\chinh-sach.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\ghe.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\ghe.png"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\icon-cau-thang.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\icon-cau-thang.png"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\icon-do-trang-tri.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\icon-do-trang-tri.png"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\icon-phong-bep.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\icon-phong-bep.png"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\icon-phong-khach.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\icon-phong-khach.png"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\icon-phong-ngu.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\icon-phong-ngu.png"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\icon-phong-tam.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\icon-phong-tam.png"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\icon-tre-em.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\icon-tre-em.png"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\icon-van-phong.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\icon-van-phong.png"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\icon_email_pro.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\icon_email_pro.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\icon_fb_pro.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\icon_fb_pro.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\icon_zalo_pro.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\icon_zalo_pro.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\jquery.slim.min.js.download",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\jquery.slim.min.js.download"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\logo.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\logo.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\main.1c2a357f.js.download",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\main.1c2a357f.js.download"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\main.a567d279.css",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\main.a567d279.css"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\marvella.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\marvella.png"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\melissa.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\melissa.png"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\muong-thanh.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\muong-thanh.png"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\san-pham.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\san-pham.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\sheraton.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\sheraton.png"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\slick-theme.css",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\slick-theme.css"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\slick.css",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\slick.css"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\style.css",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\style.css"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\sunrise-sapa.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\sunrise-sapa.png"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\the-coffee-house.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\the-coffee-house.png"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\uicons-bold-straight.css",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\uicons-bold-straight.css"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\ve-chung-toi-1.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\ve-chung-toi-1.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\ve-chung-toi-2.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\ve-chung-toi-2.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\ve-chung-toi-3.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\ve-chung-toi-3.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\ve-chung-toi-4.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\ve-chung-toi-4.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\ve-chung-toi.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\ve-chung-toi.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\vinpearl.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\vinpearl.png"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\icon-cau-thang.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\icon-cau-thang.png"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\icon-do-trang-tri.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\icon-do-trang-tri.png"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\icon-phong-bep.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\icon-phong-bep.png"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\icon-phong-khach.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\icon-phong-khach.png"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\icon-phong-ngu.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\icon-phong-ngu.png"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\icon-phong-tam.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\icon-phong-tam.png"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\icon-tre-em.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\icon-tre-em.png"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\icon-van-phong.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\icon-van-phong.png"
+    },
+    {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\logo.jpg",
       "PackagePath": "staticwebassets\\images\\anhcat\\logo.jpg"
     },
