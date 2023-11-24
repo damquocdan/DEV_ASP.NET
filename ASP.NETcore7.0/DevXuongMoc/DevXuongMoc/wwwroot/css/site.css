@@ -249,13 +249,18 @@ footer {
 .home-banner__content h1 {
     font-family: Gotham-Ultra;
     text-transform: uppercase;
-    color: var(--color);
+    color: #2c2e53;
     font-size: 2.5rem;
     margin-bottom: 0.75rem;
+}
+.home-banner__content span {
+    font-family: Gotham-Ultra;
+    color: #bd945f;
 }
 .home-banner__content p {
     max-width: 30rem;
     margin-bottom: 0.75rem;
+    font-size: 16px;
 }
 .home-banner__btn {
     text-transform: uppercase;
@@ -269,4 +274,47 @@ footer {
     overflow: hidden;
     z-index: 0;
     margin-top: 1rem;
+}
+.home-category {
+    background-color: #f3f3f3;
+    padding: 0 10%;
+}
+.list-category {
+    background-color: #fff;
+    position: relative;
+    top: -3rem;
+    padding: 0rem 3rem;
+}
+.list-category p {
+        text-align: center;
+        margin-top: 0.5rem;
+        font-family: Gotham-Ultra;
+}
+.list-category img {
+        display: block;
+        margin: 0 auto;
+        width: 10rem;
+}
+.slide-product {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.list-category .row:first-child .col-md-3 {
+    margin: 1rem 0;
+}
+.slide-product h4 {
+    text-transform: uppercase;
+    font-family: Gotham-Ultra;
+    color: var(--color);
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.home-aboutUs {
+    background-image: url(../images/AnhCatTC/ve-chung-toi/bg-about-us.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 2rem;
 }
