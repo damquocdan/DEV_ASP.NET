@@ -7,7 +7,6 @@
     border: none;
     text-decoration: none;
     transition: all 0.2s linear;
-    line-height: 1;
 }
 
 :root {
@@ -22,15 +21,134 @@
 }
 
 html, body {
-    background: #f3f3f3;
-    font-family: Gotham-Medium, sans-serif;
     margin: 0;
-    padding: 0;
-    font-size: 14px;
-    position: relative;
-    min-height: 100%;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
 }
-
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 1rem 10%;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+    .header a {
+        color: #007bff;
+        text-decoration: none;
+        background-color: transparent;
+    }
+    .header .logo {
+        height: 4.5rem;
+    }
+    .header .navbar {
+        gap: 2rem;
+    }
+.header .navbar a {
+    font-size: 0.9rem;
+    color: #000;
+    text-transform: uppercase;
+    position: relative;
+}
+.navbar a:after {
+    content: "";
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    height: 0;
+    width: 0;
+    border-bottom: 0.3rem solid #bd945f;
+    transition: 0.3s ease;
+}
+.header .group-icon {
+    display: flex;
+    gap: 1.5rem;
+}
+.header .icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.header .icon i {
+    font-size: 1.2rem;
+    color: #000;
+}
+.header .box {
+    position: absolute;
+    top: 125%;
+    transform: translateX(-40%);
+    padding: 0.5rem 0;
+    border-radius: 0.5rem;
+    width: 25rem;
+    background: #fff;
+    border: 2px solid #bd945f;
+    display: none;
+}
+.header .box__empty {
+    padding: 0.5rem;
+}
+.header .box__title {
+    text-align: center;
+    padding-bottom: 0.75rem;
+}
+.header .check__btn {
+    padding: 0.5rem 0.75rem;
+    background-color: #bd945f;
+    text-align: center;
+    color: #fff;
+}
+.header .box-wishlist {
+    width: 20rem;
+}
+.search-form {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 35%);
+    max-height: 25rem;
+    width: 25rem;
+    height: 3.5rem;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    border: 2px solid transparent;
+    align-items: center;
+}
+    .search-form label {
+        position: absolute;
+        margin-bottom: 0;
+        width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: type 4.5s steps(24) infinite;
+    }
+.search-form__search {
+    padding: 0.25rem 0.75rem;
+    border-left: 1px solid #ccc;
+}
+#menu-bar {
+    font-size: 3rem;
+    cursor: pointer;
+    color: #666;
+    border: 0.1rem solid #666;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1.5rem;
+    display: none;
+}
 a {
     text-decoration: none;
     color: var(--color);
@@ -289,6 +407,8 @@ footer {
         text-align: center;
         margin-top: 0.5rem;
         font-family: Gotham-Ultra;
+        color:#2c2e53;
+        text-decoration:none;
 }
 .list-category img {
         display: block;
@@ -312,9 +432,63 @@ footer {
     font-size: 2rem;
 }
 .home-aboutUs {
-    background-image: url(../images/AnhCatTC/ve-chung-toi/bg-about-us.jpg);
+    background-image: url(/images/anhcat/bg-about-us.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     padding-bottom: 2rem;
+    padding: 0 10%;
+}
+.home-aboutUs__content {
+    text-align: center;
+}
+.home-aboutUs__content h4 {
+        color: #fff;
+        padding-top: 3rem;
+        text-transform:uppercase;
+}
+    .home-aboutUs__content p:first-child {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    .home-aboutUs__content span {
+        font-family: Gotham-Ultra;
+    }
+    .home-aboutUs__content p {
+        text-align: justify;
+        color: #fff;
+        font-size: 0.9rem;
+    }
+    .home-aboutUs__content .list-img ul {
+        margin: 0;
+        width: 100%;
+        list-style:none;
+    }
+        .home-aboutUs__content .list-img ul li {
+            width: calc(25% - 0.5rem);
+        }
+.home-aboutUs .list-img .box .see-more {
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-aboutUs .list-img .box {
+    overflow: hidden;
+    position: relative;
+}
+.home-aboutUs .list-img .box .see-more a {
+    color: #fff;
+    font-size: 0.75rem;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
 }

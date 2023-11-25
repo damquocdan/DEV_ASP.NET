@@ -481,6 +481,10 @@
       "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\vinpearl.png"
     },
     {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\bg-about-us.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\bg-about-us.jpg"
+    },
+    {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\icon-cau-thang.png",
       "PackagePath": "staticwebassets\\images\\anhcat\\icon-cau-thang.png"
     },
@@ -515,6 +519,26 @@
     {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\logo.jpg",
       "PackagePath": "staticwebassets\\images\\anhcat\\logo.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\ve-chung-toi-1.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\ve-chung-toi-1.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\ve-chung-toi-2.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\ve-chung-toi-2.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\ve-chung-toi-3.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\ve-chung-toi-3.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\ve-chung-toi-4.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\ve-chung-toi-4.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\ve-chung-toi.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\ve-chung-toi.jpg"
     },
     {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\cau-thang\\019.jpg",

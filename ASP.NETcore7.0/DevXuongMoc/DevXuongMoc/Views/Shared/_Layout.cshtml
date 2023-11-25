@@ -4,67 +4,89 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - DevXuongMoc</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/DevXuongMoc.styles.css" asp-append-version="true" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="/logo192.png">
+    <link rel="manifest" href="/manifest.json">
+    <title>Trang chủ | Nội thất Hoàng Hoan</title>
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css">
 </head>
 <body>
-    <header style="display:flex; padding:1rem 10%; align-items:center;justify-content:space-around;" class="shadow">
+    <div class="header">
         <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
             <img class="logo" src="./images/anhcat/logo.jpg" alt="logo" />
         </a>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light mb-3">
-            <div class="container-fluid">
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-around" style="width:900px;">
-                    <ul class="navbar-nav flex-grow-3" style="font-size:18px;">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark p-3" asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark p-3" asp-area="" asp-controller="Home" asp-action="Privacy">Giới thiệu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark p-3" asp-area="" asp-controller="Product" asp-action="Index">Sản phẩm</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark p-3" asp-area="" asp-controller="Product" asp-action="Index">Tin tức</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark p-3" asp-area="" asp-controller="Product" asp-action="Index">Đối tác</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark p-3" asp-area="" asp-controller="Product" asp-action="Index">Liên hệ</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-           
+        <nav class="navbar">
+            <a class="link" asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a>
+            <a class="link" asp-area="" asp-controller="Home" asp-action="Privacy">Giới thiệu</a>       
+            <a class="link" asp-area="" asp-controller="Product" asp-action="Index">Sản phẩm</a>
+            <a class="link" asp-area="" asp-controller="Product" asp-action="Index">Tin tức</a>
+            <a class="link" asp-area="" asp-controller="Product" asp-action="Index">Đối tác</a>
+            <a class="link" asp-area="" asp-controller="Contact" asp-action="Index">Đối tác</a>      
         </nav>
-        <div class="group-icon" style="display:flex; width:80px; justify-content:space-around">
+        <div class="group-icon">
             <div class="icon icon-cart">
                 <a href="/gio-hang">
-                    <i class="fa-solid fa-cart-shopping fa-lg" style="color: #000000;"></i>
+                    <i class="fi fi-bs-shopping-bag" ></i>
                 </a>
+                <div class="box box-cart">
+                    <div class="box__empty">
+                        <p class="box__title">
+                            Giỏ hàng của bạn đang trống !
+                        </p>
+                        <a href="/san-pham">
+                            <div class="check__btn">
+                                Mua hàng ngay
+                            </div>
+                        </a>
+                    </div>
+                </div>
                 
             </div>
             <div class="icon icon-wishlist">
                 <a href="/danh-sach-yeu-thich">
-                    <i class="fa-solid fa-heart fa-bounce fa-lg" style="color: #000000;"></i>
+                    <i class="fi fi-bs-heart"></i>
                 </a>
-                
+                <div class="box box-wishlist">
+                    <div class="box__empty">
+                        <p class="box__title">
+                            Danh sách yêu thích trống !
+                        </p>
+                        <a href="/san-pham">
+                            <div class="check__btn">
+                                Xem thêm sản phẩm
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="icon">
-                <i class="fa-solid fa-magnifying-glass fa-beat-fade fa-lg" style="color: #000000;"></i>
+                <i class="fi fi-bs-search" ></i>
             </div>
-            
+            <div class="search-form">
+                <input id="search" type="text" class="search-box" required="" value="">
+                <label for="search">Bạn cần tìm sản phẩm gì?</label>
+                <a class="search-form__search" href="/tim-kiem?key=">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+            <div id="menu-bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
-    </header>
+    </div>
     <div>
         <main role="main" class="">
             @RenderBody()
