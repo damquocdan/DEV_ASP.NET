@@ -276,8 +276,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/DEV_ASP.NET/ASP.NETcore7.0/DevXuongMoc/DevXuongMoc/Views/Aboutus/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXR1c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/DEV_ASP.NET/ASP.NETcore7.0/DevXuongMoc/DevXuongMoc/Views/Carts/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DEV_ASP.NET/ASP.NETcore7.0/DevXuongMoc/DevXuongMoc/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/DEV_ASP.NET/ASP.NETcore7.0/DevXuongMoc/DevXuongMoc/Views/Home/Index.cshtml]
@@ -286,6 +294,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/DEV_ASP.NET/ASP.NETcore7.0/DevXuongMoc/DevXuongMoc/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DEV_ASP.NET/ASP.NETcore7.0/DevXuongMoc/DevXuongMoc/Views/New/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DEV_ASP.NET/ASP.NETcore7.0/DevXuongMoc/DevXuongMoc/Views/Partner/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydG5lclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/DEV_ASP.NET/ASP.NETcore7.0/DevXuongMoc/DevXuongMoc/Views/Product/Index.cshtml]

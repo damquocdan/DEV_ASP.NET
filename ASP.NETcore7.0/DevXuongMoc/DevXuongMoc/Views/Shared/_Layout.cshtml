@@ -30,15 +30,15 @@
         </a>
         <nav class="navbar">
             <a class="link" asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a>
-            <a class="link" asp-area="" asp-controller="Home" asp-action="Privacy">Giới thiệu</a>       
+            <a class="link" asp-area="" asp-controller="Aboutus" asp-action="Index">Giới thiệu</a>       
             <a class="link" asp-area="" asp-controller="Product" asp-action="Index">Sản phẩm</a>
-            <a class="link" asp-area="" asp-controller="Product" asp-action="Index">Tin tức</a>
-            <a class="link" asp-area="" asp-controller="Product" asp-action="Index">Đối tác</a>
-            <a class="link" asp-area="" asp-controller="Contact" asp-action="Index">Đối tác</a>      
+            <a class="link" asp-area="" asp-controller="New" asp-action="Index">Tin tức</a>
+            <a class="link" asp-area="" asp-controller="Partner" asp-action="Index">Đối tác</a>
+            <a class="link" asp-area="" asp-controller="Contact" asp-action="Index">Liên hệ</a>      
         </nav>
         <div class="group-icon">
             <div class="icon icon-cart">
-                <a href="/gio-hang">
+                <a class="link" asp-area="" asp-controller="Carts" asp-action="Index">
                     <i class="fi fi-bs-shopping-bag" ></i>
                 </a>
                 <div class="box box-cart">
@@ -93,10 +93,60 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - DevXuongMoc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+    <footer>
+        <div class="allInfo">
+            <div class="info">
+                <h5>thông tin chung</h5>
+                <p>công ty tnhh hoàng hoan</p>
+                <ul class="list-footer">
+                    <li>
+                        <div class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <a href="tel:0999.999.999">0999.999.999</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div>
+                            <a href="mailto:cskh@hoanghoan.vn">cskh@hoanghoan.vn</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>Số 1 Nguyễn Trãi, Thanh Xuân, Hà Nội</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <h5>về chúng tôi</h5>
+                <ul class="list-footer">
+                    <li>
+                        <a href="/">Giới thiệu</a>
+                    </li>
+                    <li><a href="/">Sản phẩm</a></li>
+                    <li><a href="/">Tin tức</a></li>
+                    <li><a href="/">Đối tác</a></li>
+                    <li><a href="/">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="info">
+                <h5>kết nối với chúng tôi</h5>
+                <div class="social">
+                    <a href="/">
+                        <img src="../../images/anhcat/icon_fb_pro.jpg" alt="social images">
+                    </a>
+                    <a href="/"><img src="../../images/anhcat/icon_zalo_pro.jpg" alt="social images"></a>
+                    <a href="/"><img src="../../images/anhcat/icon_email_pro.jpg" alt="social images"></a>
+                </div>
+                <img src="../../images/anhcat/chatluong.jpg" alt="chứng nhận">
+            </div>
+         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

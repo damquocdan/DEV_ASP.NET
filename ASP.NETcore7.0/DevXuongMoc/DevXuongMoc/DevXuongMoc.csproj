@@ -27,6 +27,7 @@
     <Folder Include="wwwroot\images\categories\" />
     <Folder Include="wwwroot\images\banners\" />
     <Folder Include="wwwroot\images\anhcat\" />
+    <Folder Include="wwwroot\images\tin-tuc\" />
     <Folder Include="wwwroot\images\news\" />
   </ItemGroup>
 

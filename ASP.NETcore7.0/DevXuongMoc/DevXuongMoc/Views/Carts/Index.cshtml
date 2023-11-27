@@ -3,61 +3,68 @@
     ViewData["Title"] = "Danh sách sản phẩm";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<div class="row">
-    <div class="col-md-12 cart ">
-        <h2>GIỎ HÀNG</h2>
-        <div class="box-cart">
-            <div class="box-cart-item-box">
-                @foreach (var item in Model)
-                {
-                    var money = item.Price * item.Quantity;
-                    <div class="box-cart-border-bottom d-flex justify-content-between align-items-center">
-                        <div class="box-cart-item d-flex justify-content-start align-items-center">
-                            <img src="@item.Image" alt="@item.Name" class="box-cart-item-img" />
-                            <div class="d-flex flex-column">
-                                <h5>@item.Name</h5>
-                                <div class="box-cart-item-btn">
-                                    <button class="btn qty_btn"><i class="fa fa-minus"></i></button>
-                                    <input type="number" class="qty_input" value="@item.Quantity" />
-                                    <button class="btn qty_btn"><i class="fa fa-plus"></i></button>
+<div class="home-cart">
+    <div class="row">
+        <div class="col-md-12 cart ">
+            <h2>GIỎ HÀNG</h2>
+            <div class="box-cart">
+                <div class="box-cart-item-box">
+                    @foreach (var item in Model)
+                    {
+                        var money = item.Price * item.Quantity;
+                        <div class="box-cart-border-bottom d-flex justify-content-between align-items-center">
+                            <div class="box-cart-item d-flex justify-content-start align-items-center">
+                                <img src="@item.Image" alt="@item.Name" class="box-cart-item-img" />
+                                <div class="d-flex flex-column">
+                                    <h5>@item.Name</h5>
+                                    <div class="box-cart-item-btn">
+                                        <button class="btn qty_btn"><i class="fa fa-minus"></i></button>
+                                        <input type="number" class="qty_input" value="@item.Quantity" />
+                                        <button class="btn qty_btn"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                    <p data-price="@item.Price">Giá: <span>@string.Format("{0:#,##0}",@item.Price)</span>VND</p>
+                                    <p data-money="@money" class="total-money">Thành tiền: <span id="money">@string.Format("{0:#,##0}",@money)</span>VND</p>
                                 </div>
-                                <p data-price="@item.Price">Giá: <span>@string.Format("{0:#,##0}",@item.Price)</span>VND</p>
-                                <p data-money="@money" class="total-money">Thành tiền: <span id="money">@string.Format("{0:#,##0}",@money)</span>VND</p>
+                            </div>
+                            <div class="btn-action">
+                                <a href="/carts/remove/?id=@item.Id" class="btn remove"><i class="fa-solid fa-xmark"></i></a>
+                                <a href="/carts/update/?id=@item.Id&quantity=@item.Quantity" data-id="@item.Id" data-qty="@item.Quantity" class="btn update">Cập nhật</a>
                             </div>
                         </div>
-                        <div class="btn-action">
-                            <a href="/carts/remove/?id=@item.Id" class="btn remove"><i class="fa-solid fa-xmark"></i></a>
-                            <a href="/carts/update/?id=@item.Id&quantity=@item.Quantity" data-id="@item.Id" data-qty="@item.Quantity" class="btn update">Cập nhật</a>
+                    }
+
+                </div>
+                <div class="box-cart-bill">
+                    <h3> Tóm tắt đơn hàng </h3>
+                    <p>
+                        Tổng thành tiền:<span id="totalMoney">
+                            @string.Format("{0:#,##0}",ViewBag.total)
+                        </span> VND
+                    </p>
+                    <p>
+                        Phí vận chuyển: <span class="ship-money">Free Ship</span><br>
+                        <small>( Miễn phí vận chuyển với đơn hàng trên 10 triệu )</small>
+                    </p>
+                    <p>
+                        Thông tin vận chuyển: Sản phẩm sẽ được Hoàng Hoan giao trong vòng 2-7 ngày.
+                        Chi tiết liên hệ
+                        <a href="tel:0978611889">0978 611 889</a>
+                    </p>
+                    <div class="cart-box cart-layout">
+                        <div>
+                            Tổng tiền :<span id="totalMoneyPay"> @string.Format("{0:#,##0}",ViewBag.total) </span> VND
                         </div>
-                    </div>
-                }
-                
-            </div>
-            <div class="box-cart-bill">
-                 <h3> Tóm tắt đơn hàng </h3>
-                 <p>Tổng thành tiền:<span id="totalMoney">
-                        @string.Format("{0:#,##0}",ViewBag.total)</span> VND</p>
-                 <p>Phí vận chuyển: <span class="ship-money">Free Ship</span><br>
-                     <small>( Miễn phí vận chuyển với đơn hàng trên 10 triệu )</small>
-                 </p>
-                 <p>Thông tin vận chuyển: Sản phẩm sẽ được Hoàng Hoan giao trong vòng 2-7 ngày. 
-                     Chi tiết liên hệ
-                    <a href="tel:0978611889">0978 611 889</a>
-                </p>
-                <div class="cart-box cart-layout">
-                    <div>
-                        Tổng tiền :<span id="totalMoneyPay"> @string.Format("{0:#,##0}",ViewBag.total) </span> VND
-                    </div>
-                    <div class="group-btn">
-                        <a href="/cart/orders" class="btn">Đặt hàng ngay</a>
-                        <a href="/product" class="btn">Tiếp tục mua hàng</a>
+                        <div class="group-btn">
+                            <a href="/cart/orders" class="btn">Đặt hàng ngay</a>
+                            <a href="/product" class="btn">Tiếp tục mua hàng</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script>
     $(document).ready(function(){
