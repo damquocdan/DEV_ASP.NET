@@ -481,8 +481,20 @@
       "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\vinpearl.png"
     },
     {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\bao-hanh.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\bao-hanh.jpg"
+    },
+    {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\bg-about-us.jpg",
       "PackagePath": "staticwebassets\\images\\anhcat\\bg-about-us.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\chat-luong.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\chat-luong.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\chinh-sach.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\chinh-sach.jpg"
     },
     {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\icon-cau-thang.png",
@@ -521,6 +533,10 @@
       "PackagePath": "staticwebassets\\images\\anhcat\\logo.jpg"
     },
     {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\san-pham.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\san-pham.jpg"
+    },
+    {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\ve-chung-toi-1.jpg",
       "PackagePath": "staticwebassets\\images\\anhcat\\ve-chung-toi-1.jpg"
     },
@@ -539,6 +555,22 @@
     {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\ve-chung-toi.jpg",
       "PackagePath": "staticwebassets\\images\\anhcat\\ve-chung-toi.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\news\\01.jpg",
+      "PackagePath": "staticwebassets\\images\\news\\01.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\news\\02.jpg",
+      "PackagePath": "staticwebassets\\images\\news\\02.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\news\\05.jpg",
+      "PackagePath": "staticwebassets\\images\\news\\05.jpg"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\news\\06.jpg",
+      "PackagePath": "staticwebassets\\images\\news\\06.jpg"
     },
     {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\products\\cau-thang\\019.jpg",
