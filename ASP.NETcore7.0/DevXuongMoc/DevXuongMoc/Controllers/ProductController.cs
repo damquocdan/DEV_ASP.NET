@@ -17,5 +17,21 @@ namespace DevXuongMoc.Controllers
 
             return View(data);
         }
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null || _context.Products == null)
+            {
+                return NotFound();
+            }
+
+            var product = await _context.Products.DefaultIfEmpty()
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            return View(product);
+        }
     }
 }

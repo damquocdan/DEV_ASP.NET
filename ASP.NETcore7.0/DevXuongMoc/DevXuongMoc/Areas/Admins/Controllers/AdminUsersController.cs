@@ -73,7 +73,7 @@ namespace DevXuongMoc.Areas.Admins.Controllers
                 {
                     var file = files[0];
                     var FileName = file.FileName;
-                    var path = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot\\image\\adminUsers", FileName);
+                    var path = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot\\images\\adminUsers", FileName);
                     using (var stream = new FileStream(path, FileMode.Create))
                     {
                         file.CopyTo(stream);

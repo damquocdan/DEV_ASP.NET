@@ -84,7 +84,7 @@ namespace DevXuongMoc.Controllers
         }
 
 
-        public IActionResult Update(int id, int quantity) {
+        public IActionResult Update(int id, int quantity)  {
             if (carts.Any(c => c.Id == id))
             {
                 // tìm kiếm sản phẩm trong giỏ hnafg và cập nhật lại số lượng mới
