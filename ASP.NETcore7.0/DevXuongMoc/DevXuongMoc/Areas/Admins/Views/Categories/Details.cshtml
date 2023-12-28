@@ -10,7 +10,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Details</title>
+    <title>Chi tiết</title>
 </head>
 <body>
 
@@ -19,92 +19,92 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Title)
+            Tên danh mục
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Title)
         </dd>
         <dt class = "col-sm-2">
-                @Html.DisplayNameFor(model => model.Icon)
+                Icon
         </dt>
         <dd class = "col-sm-10">
                 <img src="@Model.Icon" alt="@Model.Title" width="100px" height="100px" />
             
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MateTitle)
+            Tiêu đề
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.MateTitle)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MetaKeyword)
+            Từ khoá
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.MetaKeyword)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MetaDescription)
+            Mô tả
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.MetaDescription)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Slug)
+            SLUG
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Slug)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Orders)
+            Đơn đặt hàng
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Orders)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Parentid)
+            Mã cha
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Parentid)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CreatedDate)
+            Ngày tạo
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.CreatedDate)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UpdatedDate)
+            Ngày cập nhật
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.UpdatedDate)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.AdminCreated)
+            Tài khoản tạo
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.AdminCreated)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.AdminUpdated)
+            Tài khoản cập nhật
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.AdminUpdated)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Notes)
+                Ghi chú
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Notes)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Status)
+            Trạng thái
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Status)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Isdelete)
+            ISDELETE
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Isdelete)
@@ -112,8 +112,8 @@
     </dl>
 </div>
 <div>
-    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> 
-    <a class="btn btn-danger" asp-action="Index">Back to List</a>
+    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model?.Id">Sửa</a> 
+    <a class="btn btn-danger" asp-action="Index">Quay lại danh sách</a>
 </div>
 </body>
 </html>

@@ -10,110 +10,110 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Create</title>
+    <title>Tạo</title>
 </head>
 <body>
 
-<h4>AdminUser</h4>
+<h4>Tài khoản Admin</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Account" class="control-label"></label>
+                <label asp-for="Account" class="control-label">Tài khoản</label>
                 <input asp-for="Account" class="form-control" />
                 <span asp-validation-for="Account" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Password" class="control-label"></label>
+                <label asp-for="Password" class="control-label">Mật khẩu</label>
                 <input asp-for="Password" class="form-control" />
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="MaNhanSu" class="control-label"></label>
+                <label asp-for="MaNhanSu" class="control-label">Mã nhân sự</label>
                 <input asp-for="MaNhanSu" class="form-control" />
                 <span asp-validation-for="MaNhanSu" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
+                <label asp-for="Name" class="control-label">Tên</label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Phone" class="control-label"></label>
+                <label asp-for="Phone" class="control-label">Số điện thoại</label>
                 <input asp-for="Phone" class="form-control" />
                 <span asp-validation-for="Phone" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
+                <label asp-for="Email" class="control-label">Email</label>
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Avatar" class="control-label"></label>
+                <label asp-for="Avatar" class="control-label">Ảnh đại diện</label>
                 <input asp-for="Avatar" type="file" class="form-control" />
                 <span asp-validation-for="Avatar" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="IdPhongBan" class="control-label"></label>
+                <label asp-for="IdPhongBan" class="control-label">Mã phòng ban</label>
                 <input asp-for="IdPhongBan" class="form-control" />
                 <span asp-validation-for="IdPhongBan" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="NgayTao" class="control-label"></label>
+                <label asp-for="NgayTao" class="control-label">Ngày tạo</label>
                 <input asp-for="NgayTao" class="form-control" />
                 <span asp-validation-for="NgayTao" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="NguoiTao" class="control-label"></label>
+                <label asp-for="NguoiTao" class="control-label">Người tạo</label>
                 <input asp-for="NguoiTao" class="form-control" />
                 <span asp-validation-for="NguoiTao" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="NgayCapNhat" class="control-label"></label>
+                <label asp-for="NgayCapNhat" class="control-label">Ngày cập nhật</label>
                 <input asp-for="NgayCapNhat" class="form-control" />
                 <span asp-validation-for="NgayCapNhat" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="NguoiCapNhat" class="control-label"></label>
+                <label asp-for="NguoiCapNhat" class="control-label">Người cập nhật</label>
                 <input asp-for="NguoiCapNhat" class="form-control" />
                 <span asp-validation-for="NguoiCapNhat" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SessionToken" class="control-label"></label>
+                <label asp-for="SessionToken" class="control-label">Mã thông báo phiên</label>
                 <input asp-for="SessionToken" class="form-control" />
                 <span asp-validation-for="SessionToken" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Salt" class="control-label"></label>
+                <label asp-for="Salt" class="control-label">SALT</label>
                 <input asp-for="Salt" class="form-control" />
                 <span asp-validation-for="Salt" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="IsAdmin" class="control-label"></label>
+                <label asp-for="IsAdmin" class="control-label"> Is admin</label>
                 <input asp-for="IsAdmin" class="form-control" />
                 <span asp-validation-for="IsAdmin" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TrangThai" class="control-label"></label>
+                <label asp-for="TrangThai" class="control-label">Trạng thái</label>
                 <input asp-for="TrangThai" class="form-control" />
                 <span asp-validation-for="TrangThai" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="IsDelete" class="control-label"></label>
+                <label asp-for="IsDelete" class="control-label">Is delete</label>
                 <input asp-for="IsDelete" class="form-control" />
                 <span asp-validation-for="IsDelete" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input class="btn btn-info" type="submit" value="Create" class="btn btn-primary" />
+                <input class="btn btn-info" type="submit" value="Tạo" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a class="btn btn-warning" asp-action="Index">Back to List</a>
+    <a class="btn btn-warning" asp-action="Index">Quay lại danh sách</a>
 </div>
 
 </body>

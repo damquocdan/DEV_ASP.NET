@@ -1,5 +1,6 @@
 ﻿@model X.PagedList.IPagedList<DevXuongMoc.Models.AdminUser>
 @using X.PagedList.Mvc.Core;
+
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
@@ -51,35 +52,22 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().Account)
+                Tài khoản
             </th>
-            
-            
             <th>
-                        @Html.DisplayNameFor(model => model.FirstOrDefault().Name)
+                Tên
             </th>
             
             <th>
-                        @Html.DisplayNameFor(model => model.FirstOrDefault().Email)
+                Email
             </th>
             <th>
-                        @Html.DisplayNameFor(model => model.FirstOrDefault().Avatar)
+                Trạng thái
             </th>
-            
             <th>
-                        @Html.DisplayNameFor(model => model.FirstOrDefault().NgayTao)
+                Tác vụ
             </th>
-            
-            
-            
-            
-            
-            
-            <th>
-                        @Html.DisplayNameFor(model => model.FirstOrDefault().TrangThai)
-            </th>
-            
-            <th></th>
+
         </tr>
     </thead>
     <tbody>
@@ -88,36 +76,19 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Account)
             </td>
-            
-            
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
-            
             <td>
                 @Html.DisplayFor(modelItem => item.Email)
             </td>
             <td>
-                <img src="@item.Avatar" alt="@item.Name" style="width:35px;height:35px"/>
-            </td>
-            
-            <td>
-                @Html.DisplayFor(modelItem => item.NgayTao)
-            </td>
-            
-            
-            
-            
-            
-            
-            <td>
                 @Html.DisplayFor(modelItem => item.TrangThai)
             </td>
-            
             <td>
-                <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
-                <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Details</a>
-                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Sửa</a>
+                <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Xem chi tiết</a>
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Xoá</a>
             </td>
         </tr>
 }
