@@ -29,7 +29,7 @@
             <img class="logo" src="./images/anhcat/logo.jpg" alt="logo" />
         </a>
         <nav class="navbar">
-            <a class="link" asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a>
+            <a class="link" asp-area="" asp-controller="Home" asp-action="Index">Trang chủ </a>
             <a class="link" asp-area="" asp-controller="Aboutus" asp-action="Index">Giới thiệu</a>       
             <a class="link" asp-area="" asp-controller="Product" asp-action="Index">Sản phẩm</a>
             <a class="link" asp-area="" asp-controller="New" asp-action="Index">Tin tức</a>
@@ -38,10 +38,10 @@
         </nav>
         <div class="group-icon">
             <div class="icon icon-cart">
-                <a class="link" asp-area="" asp-controller="Carts" asp-action="Index">
+                <a class="link" id="icon1" asp-area="" asp-controller="Carts" asp-action="Index">
                     <i class="fi fi-bs-shopping-bag" ></i>
                 </a>
-                <div class="box box-cart">
+                <div id="box1"  class="box box-cart">
                     <div class="box__empty">
                         <p class="box__title">
                             Giỏ hàng của bạn đang trống !
@@ -56,10 +56,10 @@
                 
             </div>
             <div class="icon icon-wishlist">
-                <a href="/danh-sach-yeu-thich">
+                <a id="icon2" href="/danh-sach-yeu-thich">
                     <i class="fi fi-bs-heart"></i>
                 </a>
-                <div class="box box-wishlist">
+                <div id="box2" class="box box-wishlist">
                     <div class="box__empty">
                         <p class="box__title">
                             Danh sách yêu thích trống !
@@ -73,9 +73,9 @@
                 </div>
             </div>
             <div class="icon">
-                <i class="fi fi-bs-search" ></i>
+                <i class="fi fi-bs-search" onclick="toggleVisibility('search1', 'element2')"></i>
             </div>
-            <div class="search-form">
+            <div class="search-form" id="search1">
                 <input id="search" type="text" class="search-box" required="" value="">
                 <label for="search">Bạn cần tìm sản phẩm gì?</label>
                 <a class="search-form__search" href="/tim-kiem?key=">
@@ -152,5 +152,17 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    <script>
+        function toggleVisibility(showId, hideId) {
+            var showElement = document.getElementById(showId);
+            var hideElement = document.getElementById(hideId);
+
+            // Hiện phần tử được chọn
+            showElement.style.display = 'block';
+
+            // Ẩn phần tử khác
+            hideElement.style.display = 'none';
+        }
+    </script>
 </body>
 </html>
