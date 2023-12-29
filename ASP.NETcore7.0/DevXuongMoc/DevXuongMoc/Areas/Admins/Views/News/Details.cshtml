@@ -15,119 +15,119 @@
 <body>
 
 <div>
-    <h4>News</h4>
+    <h4>Tin tức</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Code)
+            Mã
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Code)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Title)
+            Tiêu đề
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Title)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
+            Mô tả
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Description)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Content)
+            Nội dung
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Content)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Image)
+            Hình ảnh
         </dt>
         <dd class = "col-sm-10">
             <img src="@Model.Image" alt="@Model.Title" width="100px"  height="100px"/>
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MetaTitle)
+            Tiêu đề phụ
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.MetaTitle)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MainKeyword)
+            Từ khoá chính
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.MainKeyword)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MetaKeyword)
+            Từ khoá phụ
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.MetaKeyword)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MetaDescription)
+            Mô tả phụ
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.MetaDescription)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Slug)
+            Slug
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Slug)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Views)
+            Lượt xem
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Views)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Likes)
+            Lượt thích
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Likes)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Star)
+            Star
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Star)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CreatedDate)
+            Ngày tạo
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.CreatedDate)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UpdatedDate)
+            Ngày cập nhật
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.UpdatedDate)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.AdminCreated)
+            Tài khoản tạo
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.AdminCreated)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.AdminUpdated)
+            Tài khoản cập nhật
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.AdminUpdated)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Status)
+            Trạng thái
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Status)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Isdelete)
+            ISDELETE
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Isdelete)
@@ -135,8 +135,8 @@
     </dl>
 </div>
 <div>
-    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> 
-    <a class="btn btn-info" asp-action="Index">Back to List</a>
+    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model?.Id">Sửa</a> 
+    <a class="btn btn-info" asp-action="Index">Quay lại danh sách</a>
 </div>
 </body>
 </html>

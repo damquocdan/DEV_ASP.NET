@@ -14,96 +14,96 @@
 </head>
 <body>
 
-<h4>News</h4>
+<h4>Tin tức</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Code" class="control-label"></label>
+                <label asp-for="Code" class="control-label">Mã</label>
                 <input asp-for="Code" class="form-control" />
                 <span asp-validation-for="Code" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Title" class="control-label"></label>
+                <label asp-for="Title" class="control-label">Tiêu đề</label>
                 <input asp-for="Title" class="form-control" />
                 <span asp-validation-for="Title" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
+                <label asp-for="Description" class="control-label">Mô tả</label>
                 <input asp-for="Description" class="form-control" />
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Content" class="control-label"></label>
+                <label asp-for="Content" class="control-label">Nội dung</label>
                 <input asp-for="Content" class="form-control" />
                 <span asp-validation-for="Content" class="text-danger"></span>
             </div>
                 <div class="form-group">
-                    <label asp-for="Image" class="control-label"></label>
+                    <label asp-for="Image" class="control-label">Hình ảnh</label>
                     <input asp-for="Image" type="file" class="form-control" />
                     <span asp-validation-for="Image" class="text-danger"></span>
                 </div>
             <div class="form-group">
-                <label asp-for="MetaTitle" class="control-label"></label>
+                <label asp-for="MetaTitle" class="control-label">Tiêu đề phụ</label>
                 <input asp-for="MetaTitle" class="form-control" />
                 <span asp-validation-for="MetaTitle" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="MainKeyword" class="control-label"></label>
+                <label asp-for="MainKeyword" class="control-label">Từ khoá chính</label>
                 <input asp-for="MainKeyword" class="form-control" />
                 <span asp-validation-for="MainKeyword" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="MetaKeyword" class="control-label"></label>
+                <label asp-for="MetaKeyword" class="control-label">Từ khoá phụ</label>
                 <input asp-for="MetaKeyword" class="form-control" />
                 <span asp-validation-for="MetaKeyword" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="MetaDescription" class="control-label"></label>
+                <label asp-for="MetaDescription" class="control-label">Mô tả phụ</label>
                 <input asp-for="MetaDescription" class="form-control" />
                 <span asp-validation-for="MetaDescription" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Slug" class="control-label"></label>
+                <label asp-for="Slug" class="control-label">Slug</label>
                 <input asp-for="Slug" class="form-control" />
                 <span asp-validation-for="Slug" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Views" class="control-label"></label>
+                <label asp-for="Views" class="control-label">Lượt xem</label>
                 <input asp-for="Views" class="form-control" />
                 <span asp-validation-for="Views" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Likes" class="control-label"></label>
+                <label asp-for="Likes" class="control-label">Lượt thích</label>
                 <input asp-for="Likes" class="form-control" />
                 <span asp-validation-for="Likes" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Star" class="control-label"></label>
+                <label asp-for="Star" class="control-label">Star</label>
                 <input asp-for="Star" class="form-control" />
                 <span asp-validation-for="Star" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="AdminCreated" class="control-label"></label>
+                <label asp-for="AdminCreated" class="control-label">Tài khoản tạo</label>
                 <input asp-for="AdminCreated" class="form-control" />
                 <span asp-validation-for="AdminCreated" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="AdminUpdated" class="control-label"></label>
+                <label asp-for="AdminUpdated" class="control-label">Tài khoản cập nhật</label>
                 <input asp-for="AdminUpdated" class="form-control" />
                 <span asp-validation-for="AdminUpdated" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Tạo" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a class="btn btn-info" asp-action="Index">Back to List</a>
+    <a class="btn btn-info" asp-action="Index">Quay lại danh sách</a>
 </div>
 
 </body>
