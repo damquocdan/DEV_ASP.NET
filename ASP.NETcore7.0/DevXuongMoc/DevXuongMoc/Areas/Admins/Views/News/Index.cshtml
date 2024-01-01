@@ -28,108 +28,33 @@
 <table class="table">
     <thead>
         <tr>
-            @* <th>
-                @Html.DisplayNameFor(model => model.Code)
-            </th> *@
             <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().Title)
-            </th>
-            @* <th>
-                @Html.DisplayNameFor(model => model.Description)
+                Tiêu đề
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Content)
-            </th> *@
-            <th>
-                    @Html.DisplayNameFor(model => model.FirstOrDefault().Image)
-            </th>
-            @* <th>
-                @Html.DisplayNameFor(model => model.MetaTitle)
+                Hình ảnh
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.MainKeyword)
+                Ngày tạo
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.MetaKeyword)
+                Ngày cập nhật
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.MetaDescription)
+                Tài khoản tạo
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Slug)
+                Tài khoản cập nhật
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Views)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Likes)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Star)
-            </th> *@
-            <th>
-                    @Html.DisplayNameFor(model => model.FirstOrDefault().CreatedDate)
-            </th>
-            <th>
-                    @Html.DisplayNameFor(model => model.FirstOrDefault().UpdatedDate)
-            </th>
-            <th>
-                    @Html.DisplayNameFor(model => model.FirstOrDefault().AdminCreated)
-            </th>
-            <th>
-                    @Html.DisplayNameFor(model => model.FirstOrDefault().AdminUpdated)
-            </th>
-            <th>
-                    @Html.DisplayNameFor(model => model.FirstOrDefault().Status)
-            </th>
-            @* <th>
-                @Html.DisplayNameFor(model => model.Isdelete)
-            </th> *@
-            <th></th>
+            <th>Tác vụ</th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            @* <td>
-                @Html.DisplayFor(modelItem => item.Code)
-            </td> *@
             <td>
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
-            @* <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Content)
-            </td> *@
-            <td>
-                <img src="@item.Image" alt="@item.Title" width="35px" height="35px">
-            </td>
-            @* <td>
-                @Html.DisplayFor(modelItem => item.MetaTitle)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MainKeyword)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MetaKeyword)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MetaDescription)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Slug)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Views)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Likes)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Star)
-            </td> *@
             <td>
                 @Html.DisplayFor(modelItem => item.CreatedDate)
             </td>
@@ -143,15 +68,9 @@
                 @Html.DisplayFor(modelItem => item.AdminUpdated)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
-            @* <td>
-                @Html.DisplayFor(modelItem => item.Isdelete)
-            </td> *@
-            <td>
-                <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Edit</a> 
-                <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Details</a> 
-                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Sửa</a> 
+                <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Xem chi tiết</a> 
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Xoá</a>
             </td>
         </tr>
 }

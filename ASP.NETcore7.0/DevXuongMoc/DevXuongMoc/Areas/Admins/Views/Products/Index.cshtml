@@ -43,19 +43,19 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Cid)
+                Mã
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Code)
+                Mã sản phẩm
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Title)
+                Tên sản phẩm
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Content)
+                Nội dung
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Image)
+                Hình ảnh
             </th>
             
         </tr>
@@ -80,9 +80,9 @@
             </td>
             
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a> 
-                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Details</a> 
-                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Sửa</a> 
+                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Xem chi tiết</a> 
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Xoá</a>
             </td>
         </tr>
 }

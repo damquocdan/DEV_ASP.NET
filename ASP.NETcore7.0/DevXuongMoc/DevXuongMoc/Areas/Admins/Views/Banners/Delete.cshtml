@@ -14,85 +14,85 @@
 </head>
 <body>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Bạn có chắc chắn xoá ảnh này</h3>
 <div>
     <h4>Banner</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Image)
+            Hình ảnh
         </dt>
         <dd class = "col-sm-10">
                 <img src="@Model.Image" alt="@Model.Image" width="100px" height="100px" />
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Title)
+            Tiêu đề
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Title)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SubTitle)
+            Phụ đề
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.SubTitle)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Urls)
+            Đường dẫn
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Urls)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Orders)
+            Đơn đặt hàng
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Orders)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Type)
+            Loại
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Type)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CreatedDate)
+            Ngày tạo
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.CreatedDate)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UpdatedDate)
+            Ngày cập nhật
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.UpdatedDate)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.AdminCreated)
+            Tài khoản tạo
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.AdminCreated)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.AdminUpdated)
+            Tài khoản cập nhật
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.AdminUpdated)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Notes)
+            Ghi chú
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Notes)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Status)
+            Trạng thái
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Status)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Isdelete)
+            ISDELETE
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Isdelete)
@@ -101,8 +101,8 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> 
-        <a class="btn btn-info" asp-action="Index">Back to List</a>
+        <input type="submit" value="Xoá" class="btn btn-danger" /> 
+        <a class="btn btn-info" asp-action="Index">Quay lại danh sách</a>
     </form>
 </div>
 </body>
