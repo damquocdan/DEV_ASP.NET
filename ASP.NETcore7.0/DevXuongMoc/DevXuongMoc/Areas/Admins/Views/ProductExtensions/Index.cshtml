@@ -37,19 +37,19 @@
 </head>
 <body>
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Tạo mới</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Pid)
+                Mã
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Eid)
+                Mã sản phẩm mở rộng
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Content)
+                Nội dung
             </th>
             <th></th>
         </tr>
@@ -67,9 +67,9 @@
                 @Html.DisplayFor(modelItem => item.Content)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id">Sửa</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Xem chi tiết</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Xoá</a>
             </td>
         </tr>
 }
