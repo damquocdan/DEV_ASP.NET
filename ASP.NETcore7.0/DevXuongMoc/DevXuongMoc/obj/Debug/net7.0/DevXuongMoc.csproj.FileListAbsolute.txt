@@ -255,3 +255,5 @@ E:\DEV_ASP.NET\ASP.NETcore7.0\DevXuongMoc\DevXuongMoc\bin\Debug\net7.0\JetBrains
 E:\DEV_ASP.NET\ASP.NETcore7.0\DevXuongMoc\DevXuongMoc\bin\Debug\net7.0\X.PagedList.dll
 E:\DEV_ASP.NET\ASP.NETcore7.0\DevXuongMoc\DevXuongMoc\bin\Debug\net7.0\X.PagedList.Mvc.Core.dll
 E:\DEV_ASP.NET\ASP.NETcore7.0\DevXuongMoc\DevXuongMoc\obj\Debug\net7.0\DevXuongMoc.MvcApplicationPartsAssemblyInfo.cs
+E:\DEV_ASP.NET\ASP.NETcore7.0\DevXuongMoc\DevXuongMoc\bin\Debug\net7.0\DevXuongMoc.dll.config
+E:\DEV_ASP.NET\ASP.NETcore7.0\DevXuongMoc\DevXuongMoc\obj\Debug\net7.0\DevXuongMoc.sourcelink.json

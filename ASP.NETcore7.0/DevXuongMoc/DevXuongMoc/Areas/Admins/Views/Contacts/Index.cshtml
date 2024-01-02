@@ -37,45 +37,45 @@
 </head>
 <body>
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Tạo mới</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Title)
+                Tiêu đề
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Email)
+                Email
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Phone)
+                Số điện thoại
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Address)
+                Địa chỉ
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Content)
+                Nội dung
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CreatedDate)
+                Ngày tạo
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.UpdatedDate)
+                Ngày cập nhật
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.AdminCreated)
+                Tài khoản tạo
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.AdminUpdated)
+                Tài khoản cập nhật
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Status)
+                Trạng thái
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Isdelete)
+                ISDELETE
             </th>
-            <th></th>
+            <th>Tác vụ</th>
         </tr>
     </thead>
     <tbody>
@@ -115,9 +115,9 @@
                 @Html.DisplayFor(modelItem => item.Isdelete)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-wanning">Edit</a> 
-                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Details</a>
-                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-wanning">Sửa</a> 
+                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Xem chi tiết</a>
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Xoá</a>
             </td>
         </tr>
 }

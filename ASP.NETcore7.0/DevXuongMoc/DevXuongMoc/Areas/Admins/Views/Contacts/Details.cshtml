@@ -14,71 +14,69 @@
 <body>
 
 <div>
-    <h4>Contact</h4>
-    <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Title)
+            Tiêu đề
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Title)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
+            Email
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Email)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Phone)
+            Số điện thoại
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Phone)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Address)
+            Địa chir
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Address)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Content)
+            Nội dung
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Content)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CreatedDate)
+            Ngày tạo
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.CreatedDate)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UpdatedDate)
+            Ngày cập nhật
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.UpdatedDate)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.AdminCreated)
+            Tài khoản tạo
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.AdminCreated)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.AdminUpdated)
+            Tài khoản cập nhật
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.AdminUpdated)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Status)
+            Trạng thái
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Status)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Isdelete)
+            ISDELETE
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Isdelete)
@@ -86,8 +84,8 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-wanning">Edit</a> 
-    <a asp-action="Index" class="btn btn-danger">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-wanning">Sửa</a> 
+    <a asp-action="Index" class="btn btn-danger">Quay lại danh sách</a>
 </div>
 </body>
 </html>
