@@ -52,9 +52,6 @@
                 Tên sản phẩm
             </th>
             <th>
-                Nội dung
-            </th>
-            <th>
                 Hình ảnh
             </th>
             
@@ -72,11 +69,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
+
             <td>
-                @Html.DisplayFor(modelItem => item.Content)
-            </td>
-            <td>
-                        <img src="@item.Image" alt="@item.Title" width="35px" height="35px">
+                        <img src="@item.Image" alt="@item.Title" width="350px" height="350px">
             </td>
             
             <td>
