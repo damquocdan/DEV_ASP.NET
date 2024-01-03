@@ -1,4 +1,4 @@
-* {
+﻿* {
     font-family: Gotham-Medium, sans-serif;
     margin: 0;
     padding: 0;
@@ -8,7 +8,11 @@
     text-decoration: none;
     transition: all 0.2s linear;
 }
-
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
 :root {
     --color: #2c2e53;
     --color-hover: #131317;
@@ -93,14 +97,13 @@ html, body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    text-decoration: none;
 }
 .header .icon i {
     font-size: 1.2rem;
     color: #000;
-    text-decoration:none;
 }
-.header .box {
+/* Ẩn box ban đầu */
+.box-cart {
     position: absolute;
     top: 125%;
     transform: translateX(-40%);
@@ -111,19 +114,10 @@ html, body {
     border: 2px solid #bd945f;
     display: none;
 }
-#icon1:hover + #box1 {
-    position: absolute;
-    top: 125%;
-    transform: translateX(-40%);
-    padding: 0.5rem 0;
-    border-radius: 0.5rem;
-    width: 25rem;
-    background: #fff;
-    border: 2px solid #bd945f;
+.icon-cart:hover .box-cart {
     display: block;
-    text-decoration:none;
 }
-#icon2:hover + #box2 {
+.box-wishlist {
     position: absolute;
     top: 125%;
     transform: translateX(-40%);
@@ -132,8 +126,11 @@ html, body {
     width: 25rem;
     background: #fff;
     border: 2px solid #bd945f;
+    display: none;
+}
+
+.icon-wishlist:hover .box-wishlist {
     display: block;
-    text-decoration: none;
 }
 
 .header .box__empty {
@@ -153,6 +150,14 @@ html, body {
     width: 20rem;
 }
 .search-form {
+    display: none;
+}
+.search-form.active {
+    display: block;
+    right: 1rem;
+    transition: 0.4s linear;
+}
+.search-form {
     position: absolute;
     top: 110%;
     right: -110%;
@@ -168,14 +173,7 @@ html, body {
     border: 2px solid transparent;
     align-items: center;
 }
-    .search-form label {
-        position: absolute;
-        margin-bottom: 0;
-        width: 0;
-        overflow: hidden;
-        white-space: nowrap;
-        animation: type 4.5s steps(24) infinite;
-    }
+
 .search-form__search {
     padding: 0.25rem 0.75rem;
     border-left: 1px solid #ccc;
@@ -184,6 +182,22 @@ html, body {
     width: 100%;
     height: 100%;
     padding: 0 0.5rem;
+}
+.search-form label {
+    margin-bottom: 0;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: type 4.5s steps(24) infinite;
+}
+.search-form i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    color: #ccc;
+}
+.fa-magnifying-glass{
+    content: "\f002";
 }
 #menu-bar {
     font-size: 3rem;
@@ -423,7 +437,6 @@ footer {
 .home-banner__content p {
     max-width: 30rem;
     margin-bottom: 0.75rem;
-    font-size: 16px;
 }
 .home-banner__btn {
     text-transform: uppercase;
