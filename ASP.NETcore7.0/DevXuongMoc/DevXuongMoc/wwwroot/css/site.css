@@ -214,9 +214,9 @@ a {
     font-weight: bold;
 }
 
-    a:hover {
-        color: var(--color-hover);
-    }
+a:hover {
+    color: var(--color-hover);
+}
 
 p {
     margin: 0.25rem 0;
