@@ -304,17 +304,17 @@ footer {
     background: #fff;
 }
 
-    .cart h2 {
-        padding: .5rem;
-    }
+.cart h2 {
+    padding: .5rem;
+}
 
-    .cart .box-cart {
-        display: flex;
-        padding-bottom: 2rem;
-        gap: .5rem;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
+.cart .box-cart {
+    display: flex;
+    padding-bottom: 2rem;
+    gap: .5rem;
+    align-items: flex-start;
+    justify-content: space-between;
+}
 
 .box-cart-item-box {
     width: 100%;
