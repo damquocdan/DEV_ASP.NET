@@ -374,8 +374,7 @@ footer {
     .btn-action i {
         font-size: 1.5rem;
     }
-
-    .btn-action a {
+.btn-action a {
         margin-top: .25rem;
         cursor: pointer;
         border: 2px solid var(--color);
@@ -383,7 +382,7 @@ footer {
         color: #bd945f;
         align-items: center;
         display: flex;
-    }
+}
 
 .cart span {
     color: #fd475a;
