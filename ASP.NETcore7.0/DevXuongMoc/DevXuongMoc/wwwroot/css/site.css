@@ -371,9 +371,9 @@ footer {
     justify-content: flex-end;
 }
 
-    .btn-action i {
-        font-size: 1.5rem;
-    }
+.btn-action i {
+   font-size: 1.5rem;
+}
 .btn-action a {
         margin-top: .25rem;
         cursor: pointer;
