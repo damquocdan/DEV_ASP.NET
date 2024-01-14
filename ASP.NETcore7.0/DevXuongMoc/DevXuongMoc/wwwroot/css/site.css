@@ -523,19 +523,19 @@ footer {
     .home-aboutUs__content span {
         font-family: Gotham-Ultra;
     }
-    .home-aboutUs__content p {
-        text-align: justify;
-        color: #fff;
-        font-size: 0.9rem;
-    }
-    .home-aboutUs__content .list-img ul {
-        margin: 0;
-        width: 100%;
-        list-style:none;
-    }
-        .home-aboutUs__content .list-img ul li {
-            width: calc(25% - 0.5rem);
-        }
+.home-aboutUs__content p {
+    text-align: justify;
+    color: #fff;
+    font-size: 0.9rem;
+}
+.home-aboutUs__content .list-img ul {
+    margin: 0;
+    width: 100%;
+    list-style:none;
+}
+.home-aboutUs__content .list-img ul li {
+    width: calc(25% - 0.5rem);
+}
 .home-aboutUs .list-img .box .see-more {
     background: rgba(0, 0, 0, 0.4);
     height: 100%;
