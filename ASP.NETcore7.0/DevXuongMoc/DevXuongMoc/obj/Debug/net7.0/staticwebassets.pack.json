@@ -317,10 +317,6 @@
       "PackagePath": "staticwebassets\\images\\anhcat\\banner.jpg"
     },
     {
-      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner.png",
-      "PackagePath": "staticwebassets\\images\\anhcat\\banner.png"
-    },
-    {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\banner_files\\01.jpg",
       "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\01.jpg"
     },
@@ -505,6 +501,10 @@
       "PackagePath": "staticwebassets\\images\\anhcat\\bg-about-us.jpg"
     },
     {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\bgr.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\bgr.jpg"
+    },
+    {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\chat-luong.jpg",
       "PackagePath": "staticwebassets\\images\\anhcat\\chat-luong.jpg"
     },
@@ -545,10 +545,6 @@
       "PackagePath": "staticwebassets\\images\\anhcat\\icon-phong-tam.png"
     },
     {
-      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\icon-tre-em.png",
-      "PackagePath": "staticwebassets\\images\\anhcat\\icon-tre-em.png"
-    },
-    {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\icon-van-phong.png",
       "PackagePath": "staticwebassets\\images\\anhcat\\icon-van-phong.png"
     },
@@ -573,16 +569,8 @@
       "PackagePath": "staticwebassets\\images\\anhcat\\logo.jpg"
     },
     {
-      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\logo3.png",
-      "PackagePath": "staticwebassets\\images\\anhcat\\logo3.png"
-    },
-    {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\marvella.png",
       "PackagePath": "staticwebassets\\images\\anhcat\\marvella.png"
-    },
-    {
-      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\melissa.png",
-      "PackagePath": "staticwebassets\\images\\anhcat\\melissa.png"
     },
     {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\muong-thanh.png",
@@ -659,10 +647,6 @@
     {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\ve-chung-toi.jpg",
       "PackagePath": "staticwebassets\\images\\anhcat\\ve-chung-toi.jpg"
-    },
-    {
-      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\anhcat\\vinpearl.png",
-      "PackagePath": "staticwebassets\\images\\anhcat\\vinpearl.png"
     },
     {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\images\\news\\01.jpg",
@@ -6589,6 +6573,22 @@
       "PackagePath": "staticwebassets\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.DiskQuota\\app.config"
     },
     {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.DiskQuota\\obj\\Debug\\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs",
+      "PackagePath": "staticwebassets\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.DiskQuota\\obj\\Debug\\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.DiskQuota\\obj\\Debug\\CKFinder.Connector.Plugin.DiskQuota.csproj.AssemblyReference.cache",
+      "PackagePath": "staticwebassets\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.DiskQuota\\obj\\Debug\\CKFinder.Connector.Plugin.DiskQuota.csproj.AssemblyReference.cache"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.DiskQuota\\obj\\Release\\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs",
+      "PackagePath": "staticwebassets\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.DiskQuota\\obj\\Release\\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.DiskQuota\\obj\\Release\\CKFinder.Connector.Plugin.DiskQuota.csproj.AssemblyReference.cache",
+      "PackagePath": "staticwebassets\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.DiskQuota\\obj\\Release\\CKFinder.Connector.Plugin.DiskQuota.csproj.AssemblyReference.cache"
+    },
+    {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.DiskQuota\\packages.config",
       "PackagePath": "staticwebassets\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.DiskQuota\\packages.config"
     },
@@ -6613,6 +6613,22 @@
       "PackagePath": "staticwebassets\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.GetFileInfo\\app.config"
     },
     {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.GetFileInfo\\obj\\Debug\\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs",
+      "PackagePath": "staticwebassets\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.GetFileInfo\\obj\\Debug\\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.GetFileInfo\\obj\\Debug\\CKFinder.Connector.Plugin.GetFileInfo.csproj.AssemblyReference.cache",
+      "PackagePath": "staticwebassets\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.GetFileInfo\\obj\\Debug\\CKFinder.Connector.Plugin.GetFileInfo.csproj.AssemblyReference.cache"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.GetFileInfo\\obj\\Release\\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs",
+      "PackagePath": "staticwebassets\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.GetFileInfo\\obj\\Release\\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.GetFileInfo\\obj\\Release\\CKFinder.Connector.Plugin.GetFileInfo.csproj.AssemblyReference.cache",
+      "PackagePath": "staticwebassets\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.GetFileInfo\\obj\\Release\\CKFinder.Connector.Plugin.GetFileInfo.csproj.AssemblyReference.cache"
+    },
+    {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.GetFileInfo\\packages.config",
       "PackagePath": "staticwebassets\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.GetFileInfo\\packages.config"
     },
@@ -6631,6 +6647,22 @@
     {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.UserActionsLogger\\app.config",
       "PackagePath": "staticwebassets\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.UserActionsLogger\\app.config"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.UserActionsLogger\\obj\\Debug\\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs",
+      "PackagePath": "staticwebassets\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.UserActionsLogger\\obj\\Debug\\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.UserActionsLogger\\obj\\Debug\\CKFinder.Connector.Plugin.UserActionsLogger.csproj.AssemblyReference.cache",
+      "PackagePath": "staticwebassets\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.UserActionsLogger\\obj\\Debug\\CKFinder.Connector.Plugin.UserActionsLogger.csproj.AssemblyReference.cache"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.UserActionsLogger\\obj\\Release\\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs",
+      "PackagePath": "staticwebassets\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.UserActionsLogger\\obj\\Release\\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.UserActionsLogger\\obj\\Release\\CKFinder.Connector.Plugin.UserActionsLogger.csproj.AssemblyReference.cache",
+      "PackagePath": "staticwebassets\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.UserActionsLogger\\obj\\Release\\CKFinder.Connector.Plugin.UserActionsLogger.csproj.AssemblyReference.cache"
     },
     {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.UserActionsLogger\\packages.config",
@@ -6667,6 +6699,22 @@
     {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.Watermark\\app.config",
       "PackagePath": "staticwebassets\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.Watermark\\app.config"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.Watermark\\obj\\Debug\\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs",
+      "PackagePath": "staticwebassets\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.Watermark\\obj\\Debug\\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.Watermark\\obj\\Debug\\CKFinder.Connector.Plugin.Watermark.csproj.AssemblyReference.cache",
+      "PackagePath": "staticwebassets\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.Watermark\\obj\\Debug\\CKFinder.Connector.Plugin.Watermark.csproj.AssemblyReference.cache"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.Watermark\\obj\\Release\\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs",
+      "PackagePath": "staticwebassets\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.Watermark\\obj\\Release\\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs"
+    },
+    {
+      "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.Watermark\\obj\\Release\\CKFinder.Connector.Plugin.Watermark.csproj.AssemblyReference.cache",
+      "PackagePath": "staticwebassets\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.Watermark\\obj\\Release\\CKFinder.Connector.Plugin.Watermark.csproj.AssemblyReference.cache"
     },
     {
       "Id": "E:\\DEV_ASP.NET\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\plugins\\ckfinder\\src\\CKFinder.Connector.Plugin.Watermark\\packages.config",

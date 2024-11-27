@@ -1,7 +1,21 @@
-﻿﻿
+﻿﻿﻿
 @model DevXuongMoc.Areas.Admins.Models.Login
 @{
     Layout = null;
+}
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <ul>
+            @foreach (var modelState in ViewData.ModelState.Values)
+            {
+                foreach (var error in modelState.Errors)
+                {
+                    <li>@error.ErrorMessage</li>
+                }
+            }
+        </ul>
+    </div>
 }
 
 <!DOCTYPE html>
@@ -21,78 +35,61 @@
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 </head>
 <body class="hold-transition login-page">
-    <div class="login-box">
-        <div class="login-logo">
-            <a href="~/"><b>Admin</b>LTE</a>
-        </div>
-        <!-- /.login-logo -->
-        <div class="card">
-            <div class="card-body login-card-body">
-                <p class="login-box-msg">Sign in to start your session</p>
+    <div class="d-flex justify-content-center align-items-center" style="height:659px">
+        <section>
 
-                <form asp-action="Index" method="post">
-                    <div class="input-group mb-3">
-                        <input type="email" class="form-control" asp-for="Email" placeholder="Email">
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-envelope"></span>
-                            </div>
-                        </div>
-                        <span asp-validation-for="Email"></span>
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="password" class="form-control" asp-for="Password" placeholder="Password">
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-lock"></span>
-                            </div>
-                        </div>
-                        <span asp-validation-for="Password"></span>
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                            <div class="icheck-primary">
-                                <input type="checkbox" id="remember">
-                                <label for="remember">
-                                    Remember Me
-                                </label>
-                            </div>
-                        </div>
-                        <!-- /.col -->
-                        <div class="col-4">
-                            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
-                        </div>
-                        <!-- /.col -->
-                    </div>
-                </form>
-
-                <div class="social-auth-links text-center mb-3">
-                    <p>- OR -</p>
-                    <a href="#" class="btn btn-block btn-primary">
-                        <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
-                    </a>
-                    <a href="#" class="btn btn-block btn-danger">
-                        <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
-                    </a>
-                </div>
-                <!-- /.social-auth-links -->
-
-                <p class="mb-1">
-                    <a href="forgot-password.html">I forgot my password</a>
-                </p>
-                <p class="mb-0">
-                    <a href="register.html" class="text-center">Register a new membership</a>
-                </p>
+            <div class="w-100 d-flex justify-content-center">
+                <img src="~/dist/img/logologin.png" style="width:800PX" />
             </div>
-            <!-- /.login-card-body -->
-        </div>
+            <h2 class="text-center mb-5 mt-2">Đăng nhập ADMIN</h2>
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-md-9 col-lg-6 col-xl-5">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                             class="img-fluid" alt="Sample image">
+                    </div>
+                    <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                        <form asp-action="Index" method="post">
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <input asp-for="Account" type="text" id="form3Example3" class="custom-input form-control form-control-lg "
+                                       placeholder="User" required/>
+
+                            </div>
+
+                            <!-- Password input -->
+                            <div class="form-outline mb-3">
+                                <input asp-for="Password" type="password" id="form3Example4" class="custom-input form-control form-control-lg"
+                                       placeholder="Mật khẩu" required/>
+
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <!-- Checkbox -->
+                                <div class="form-check mb-0">
+                                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                                    <label class="form-check-label" for="form2Example3">
+                                        Remember me
+                                    </label>
+                                </div>
+                                <a href="#!" class="text-body">Forgot password?</a>
+                            </div>
+
+                            <div class="text-center text-lg-start mt-4 pt-2">
+                                <button type="submit" class="btn btn-primary btn-lg"
+                                        style="padding-left: 2.5rem; padding-right: 2.5rem;">
+                                    Đăng nhập
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    <!-- /.login-box -->
-    <!-- jQuery -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap 4 -->
     <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- AdminLTE App -->
     <script src="../../dist/js/adminlte.min.js"></script>
 </body>
 </html>

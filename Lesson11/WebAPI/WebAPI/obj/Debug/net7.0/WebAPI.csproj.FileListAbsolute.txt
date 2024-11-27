@@ -504,3 +504,4 @@ E:\DEV_ASP.NET\Lesson11\WebAPI\WebAPI\obj\Debug\net7.0\refint\WebAPI.dll
 E:\DEV_ASP.NET\Lesson11\WebAPI\WebAPI\obj\Debug\net7.0\WebAPI.pdb
 E:\DEV_ASP.NET\Lesson11\WebAPI\WebAPI\obj\Debug\net7.0\WebAPI.genruntimeconfig.cache
 E:\DEV_ASP.NET\Lesson11\WebAPI\WebAPI\obj\Debug\net7.0\ref\WebAPI.dll
+E:\DEV_ASP.NET\Lesson11\WebAPI\WebAPI\obj\Debug\net7.0\WebAPI.sourcelink.json

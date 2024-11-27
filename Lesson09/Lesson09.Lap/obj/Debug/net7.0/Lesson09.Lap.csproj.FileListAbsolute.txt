@@ -255,3 +255,4 @@ E:\DEV_ASP.NET\Lesson09\Lesson09.Lap\bin\Debug\net7.0\JetBrains.Annotations.dll
 E:\DEV_ASP.NET\Lesson09\Lesson09.Lap\bin\Debug\net7.0\X.PagedList.dll
 E:\DEV_ASP.NET\Lesson09\Lesson09.Lap\bin\Debug\net7.0\X.PagedList.Mvc.Core.dll
 E:\DEV_ASP.NET\Lesson09\Lesson09.Lap\obj\Debug\net7.0\Lesson09.Lap.MvcApplicationPartsAssemblyInfo.cs
+E:\DEV_ASP.NET\Lesson09\Lesson09.Lap\obj\Debug\net7.0\Lesson09.Lap.sourcelink.json

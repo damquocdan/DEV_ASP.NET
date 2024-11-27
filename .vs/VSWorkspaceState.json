@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Lesson09",
+    "\\Lesson09\\Lesson09.Lap",
+    "\\Lesson09\\Lesson09.Lap\\Views",
+    "\\Lesson09\\Lesson09.Lap\\Views\\Carts"
   ],
+  "SelectedNode": "\\Lesson09\\Lesson09.Lap\\Views\\Carts\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

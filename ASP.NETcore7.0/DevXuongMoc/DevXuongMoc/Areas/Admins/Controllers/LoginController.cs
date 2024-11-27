@@ -24,22 +24,26 @@ namespace DevXuongMoc.Areas.Admins.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return View(model);// trả về trạng thái lỗi
+                ModelState.AddModelError(string.Empty, "Thông tin đăng nhập không hợp lệ.");
+                return View(model);
             }
-            // sẽ xử lý logic phần đăng nhập tại đây
             var pass = model.Password;
-            var dataLogin = _context.AdminUsers.Where(x => x.Email.Equals(model.Email) && x.Password.Equals(pass)).OrderBy(c => c.Id);
+            // sẽ xử lý logic phần đăng nhập tại đây
+            var dataLogin = _context.AdminUsers.FirstOrDefault(x => x.Account.Equals(model.Account) && x.Password.Equals(pass));
+
             if (dataLogin != null)
             {
                 // Lưu session khi đăng nhập thành công
-                HttpContext.Session.SetString("AdminLogin", model.Email);
-
-
+                HttpContext.Session.SetString("AdminLogin", model.Account);
                 return RedirectToAction("Index", "Dashboard");
             }
-            return View(model);
-
+            else
+            {
+                ModelState.AddModelError(string.Empty, "Thông tin đăng nhập không chính xác.");
+                return View(model);
+            }
         }
+
         [HttpGet]// thoát đăng nhập, huỷ session
         public IActionResult Logout()
         {
