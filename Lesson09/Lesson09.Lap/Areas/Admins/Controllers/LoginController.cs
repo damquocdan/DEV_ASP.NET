@@ -1,4 +1,4 @@
-﻿using Lesson09.Lap.Areas.Admins.Models;
+﻿
 using Lesson09.Lap.Models;
 using Microsoft.AspNetCore.Mvc;
 
