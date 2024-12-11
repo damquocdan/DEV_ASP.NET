@@ -27,13 +27,11 @@ namespace DevXuongMoc.Areas.Admins.Controllers
                 ModelState.AddModelError(string.Empty, "Thông tin đăng nhập không hợp lệ.");
                 return View(model);
             }
-            var pass = model.Password;
-            // sẽ xử lý logic phần đăng nhập tại đây
-            var dataLogin = _context.AdminUsers.FirstOrDefault(x => x.Account.Equals(model.Account) && x.Password.Equals(pass));
 
+            var pass = model.Password;
+            var dataLogin = _context.AdminUsers.FirstOrDefault(x => x.Account.Equals(model.Account) && x.Password.Equals(pass));
             if (dataLogin != null)
             {
-                // Lưu session khi đăng nhập thành công
                 HttpContext.Session.SetString("AdminLogin", model.Account);
                 return RedirectToAction("Index", "Dashboard");
             }
@@ -42,8 +40,8 @@ namespace DevXuongMoc.Areas.Admins.Controllers
                 ModelState.AddModelError(string.Empty, "Thông tin đăng nhập không chính xác.");
                 return View(model);
             }
-        }
 
+        }
         [HttpGet]// thoát đăng nhập, huỷ session
         public IActionResult Logout()
         {

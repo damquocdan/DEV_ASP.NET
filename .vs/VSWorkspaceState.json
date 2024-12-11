@@ -1,11 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\ASP.NETcore7.0",
+    "\\ASP.NETcore7.0\\DevXuongMoc",
+    "\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc",
+    "\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot",
+    "\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\css",
     "\\Lesson09",
     "\\Lesson09\\Lesson09.Lap",
     "\\Lesson09\\Lesson09.Lap\\Views",
     "\\Lesson09\\Lesson09.Lap\\Views\\Carts"
   ],
-  "SelectedNode": "\\Lesson09\\Lesson09.Lap\\Program.cs",
+  "SelectedNode": "\\ASP.NETcore7.0\\DevXuongMoc\\DevXuongMoc\\wwwroot\\css\\site.css",
   "PreviewInSolutionExplorer": false
 }
